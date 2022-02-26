@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><h1 align="center">Phase 1: Categorization</h1></head>
+    <body>
+        <div align="center">
+            <img src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/edu/20190709_what_is_the_cia_triad/cia_triad.png" height="230" width="260">
+        </div>
+        <ul>
+            <li>Categorization of the information system is basesd on the impact analysis. It is performed to determine:</li>
+            <ul>
+                <li>The types of information included within the security authorization boundary</li>
+                <li>The security requirements for the information types</li>
+                <li>The potential impact <b>on</b> the organization resulting from compromise</li>
+            </ul>
+            <li>The result is used as the basis for developing the security plan, selecting security controls, and determining the risk inherent in operating the system</li>
+        </ul>
+        <h2>Task 1: Categorization Objective:</h2>
+        <ul>
+            <li>Produce the FIPS 199 Categorization document for the system</li>
+            <li>This document is utilized in multiple locations and on multiple efforts</li>
+            <ul>
+                <li>SSP - Systems Security Plan</li>
+                <li>Budgets and CPIC activities</li>
+                <li>SORN's - System of Record Notifications</li>
+                <li>Program Objective Memoranda - POM and Program of Record - POR for service</li>
+            </ul>
+            <li>Determination of the information types:</li>
+            <ul>
+                <li>A specific categoy of information</li>
+                <li>Develop system descriptions</li>
+                <li>Register the system</li>
+            </ul>
+            <li>Identify roles</li>
+            <ul>
+                <li>Primary role = Information system owner</li>
+                <li>Support = Information owner and all others involved in risk assessments</li>
+            </ul>
+        </ul>
+        <strong><a href="https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.199.pdf">FIPS 199</a></strong>
+        <p>The <b>"High Water Mark"</b> is the same as Overall Residual Risk in Army Risk Assessments</p>
+        <br>
+        <strong>Guidelines for adjusting system categorization</strong>
+        <ul>
+            <li>Aggregation - standard OPSEC aggregation concept</li>
+            <ul>
+                <li>Combinations of data which increase CIA risks</li>
+                <li>"Total" > sum of parts</li>
+                <li>Especially common in PII & HIPPA areas</li>
+            </ul>
+            <li>Critical system functionality</li>
+            <ul>
+                <li>Impact on connected systems</li>
+                <li>Both connected to and receiving from systems - bi-directional risk</li>
+            </ul>
+            <li>Extenuating circumstances</li>
+            <ul>
+                <li>Catastrophic loss of system availability</li>
+                <li>Large Supporting Systems are involved</li>
+                <li>Interconnected systems</li>
+                <li>Public data requirements not already covered under FIPS 199</li>
+                <ul>
+                    <li>Public data requirements where Confidentiality = N/A</li>
+                </ul>
+            </ul>
+            <li>External factors</li>
+            <li>Public information integrity</li>
+            <li>critical Infrastructure and key resources</li>
+            <li>Trade secrets</li>
+            <li>Overall information system impact</li>
+            <li>Privacy Information</li>
+        </ul>
+        <h2>Task 2: Information Systems Description</h2>
+        <p>Major Applications are made of Major Information Systems</p>
+        <ul>Under <a href="http://csrc.nist.gov/publications/nistpubs/800-18-Rev1/sp800-18-Rev1-final.pdf">NIST SP 800-18: Guide for Developing Security Plans for Federal Information Systems</a>
+            <li>MA = Major Application</li>
+            <li>GSS = General Support System</li>
+            <ul>
+                <li>Minor Applications - may inherit some or all security controls provided by the GSS or MA</li>
+                <li>Minor Apps must implement the minimum controls required for the information system if the edge controls don't do so</li>
+            </ul>
+        </ul>
+        <ul>Under <a href="https://www.cio.gov/policies-and-priorities/circular-a-130/">OMB Circular A-130</a>
+            <li>AIS = Automated Information System</li>
+            <ul>
+                <li>MA = Major Application</li>
+                <li>GSS = General Support System</li>
+            </ul>
+            <li>Defines "Adequate security"</li>
+        </ul>
+        <ul>Site Authorizations
+            <li>Focus is one location or facility with all component parts of the system including inherited common controls from external providers</li>
+            <ul>
+                <li>Usually under one command or facility</li>
+                <li>Common security policies</li>
+                <li>Common operating environment</li>
+            </ul>
+            <li>Allows for single package for identical copies of system which are deployed in different environments</li>
+        </ul>
+        <ul>Enclave Authorizations
+            <li>A collection of computing environments under the control of a single authority and security policy</li>
+            <ul>
+                <li>LAN</li>
+                <li>Backbone Networks</li>
+                <li>Data Centers</li>
+                <li>Ship - Naval IT</li>
+            </ul>
+            <li>In the DoD, enclaves always assume the highest security level being supported</li>
+            <li>Enclave types</li>
+            <ul>
+                <li>Core - Endpoints</li>
+                <li>Leverage - Where guest networks access from the internet, DMZs, DB's, Security Tools, Apps-hosting</li>
+                <li>Tenant - Projects hosting</li>
+                <li>Dev/Test Enclave is isolated <b>Nobody talks to test</b></li>
+                <li><strong>Core & Tenent talk through Leverage but never talk to each other directly</strong></li>
+                <li></li>
+            </ul>
+        </ul>
+        <ul>Defining IS Boundaries
+            <li>Defined by a set of resources allocated to the system</li>
+            <li>Support same mission/business objectives</li>
+            <li>Reside in the same operating environment</li>
+        </ul>
+        <table border="solid">
+            <tr bgcolor="#b5b4b0">
+                <th>Boundary Size</th>
+                <th>Advantag</th>
+                <th>Disadvantage</th>
+            </tr>
+            <tr>
+                <td>Too expansive</td>
+                <td>Fewer documents</td>
+                <td><ul>
+                    <li>Unwieldy</li>
+                    <li>Complex</li>
+                    <li>Creates conflit</li>
+                </ul></td>
+            </tr>
+            <tr bgcolor="#b5b4b0">
+                <td>Too limited</td>
+                <td>Focused</td>
+                <td><ul>
+                    <li>More to manage</li>
+                    <li>Inflates costs</li>
+                    <li>Possibility of gaps</li>
+                </ul></td>
+            </tr>
+        </table>
+        <p>Organizations have significant latitude determining what constitutes an information system and its boundaries.</p>
+        <ul>Establishing information system boundaries
+            <li>Organization wide activity</li>
+            <li>Consults with security and system stake holders</li>
+        </ul>
+        Interconnections<br>
+        <p><a href="https://csrc.nist.gov/publications/detail/sp/800-47/rev-1/final">NIST SP 800-47</a><br>
+            Is a security guide for interconnecting information systems. It sets the ground rules for interconnections.</p>
+        <ul>
+            <li>The direct connection of 2 or more information systmes</li>
+            <li>Documented with a MOU/MOA which includes the T&C's and responsibilities for each organization</li>
+            <li>Is created at the current point in the system lifecycle when it is determined necessary</li>
+            <li>Not needed for endpoints</li>
+            <li>Assigns traceable responsibilities</li>
+            <li>Includes a topological diagram of the interconnections</li>
+        </ul>
+        <h3>Where is all this written??</h3>
+        <ul>
+            <li>System Security Plan (SSP): <a href="https://csrc.nist.gov/publications/detail/sp/800-18/rev-1/final">NIST SP 800-18</a></li>
+            <li>System Owner/PM are responsible for assembling</li>
+            <li>Basic Outline Includes:</li>
+            <ul>
+                <li>Description</li>
+                <li>POC's</li>
+                <li>Listing of controls</li>
+                <li>Approvals</li>
+                <li>Artifacts (the documentations)</li>
+            </ul>
+            <li>What gets documented in SSP?</li>
+            <ul>
+                <li>Mission/vision of the system</li>
+                <li>Responsible parties and domains</li>
+                <li>System description & boundaries</li>
+                <li>(MSB) of all security controls</li>
+                <li>Status of controls</li>
+                <li>Approvals</li>
+                <li>Appendicies</li>
+            </ul>
+        </ul>
+    </body>
+</html>
