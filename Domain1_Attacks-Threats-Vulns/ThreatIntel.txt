@@ -1,0 +1,10 @@
+Potential Sources:
+1) Closed/Proprietary
+2) OSINT
+  - Gov't reports
+  - Media
+  - Academic
+3) Google Hacking Exploit DB - www.exploit-db.com
+4) File repos like GitHub
+5) cve.mitre.org
+6) Dark Web/dark net
