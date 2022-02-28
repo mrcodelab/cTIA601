@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><h1 align="center">Phase 2: Select</h1></head>
+<div align="center">
+    <img src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/edu/20190709_what_is_the_cia_triad/cia_triad.png" height="230" width="260">
+</div>
+  <body>
+    <div>
+      <h2>Selection of Controls</h2>
+      <ul>
+        <li>Selection Objectives</li>
+        <li>Identify security controls needed</li>
+        <ul>
+          <li>Tailoring Encompasses:</li>
+          <ul>
+            <li>Identifying/designating common controls in initial baselines</li>
+            <li>Making risk-based decisions on remaining baseline controls</li>
+            <li>Selecting compensating controls</li>
+            <li>Supplementing baselines with additional controls and control enhancement, if applicable</li>
+          </ul>
+        </ul>
+        <li>Select minimum security control baseline</li>
+        <li>Build monitoring strategy for identified controls</li>
+        <li>Selection tasks</li>
+        <li>Common control identification</li>
+        <li>Security control selection</li>
+      </ul>
+      <h2>Selection Documents</h2>
+      <ul>
+        <li><a href="https://csrc.nist.gov/publications/detail/fips/200/final">FIPS-200: Minimum Security Requirements for Federal Information and Information Systems</a></li>
+        <p>OR</p>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final">NIST SP 800-53r5: Security and Privacy Controls for Information Systems and Organizations</a></li>
+        <p>AND</p>
+        <li>Selection Input Documents:</li>
+        <ul>
+          <li><a href="https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.199.pdf">FIPS-199 Document</a></li>
+          <li>System Security Plan (SSP) - so far</li>
+          <li>Common control inputs</li>
+          <li>Tailoring guidance</li>
+          <li>Initial Risk Assessment</li>
+        </ul>
+        <li><strong>Output = 3/4 SSP</strong></li>
+      </ul>
+      <h3>There are 6 tasks in Security Selection:</h3>
+      <ol>
+        <li>Control Selection</li>
+        <li>Control Tailoring</li>
+        <li>Control Allocation</li>
+        <li>Documentation of planned control implementations</li>
+        <li>Continuous monitoring strategy of the system</li>
+        <li>Plan review and approval</li>
+      </ol>
+        <div class="row">
+          <div class="col-md-8">
+            <p>
+              The information system owner is the primary role in this function. The Common Control Provider, Security Architect, and Information Owner all play a supporting role.
+            </p>
+        </div>
+      <h3>Organization of Controls</h3>
+      <ul>
+        <li>Security controls are organized into eighteen families</li>
+        <ul>
+          <li>Related by security function</li>
+          <li>Designated by a two-character identifier</li>
+          <li>Published in alphabetical order in the Appendix</li>
+        </ul>
+        <li>Programmatic controls are listed in separate appendixes</li>
+        <li>Families of controls are organized into 3 classes:</li>
+        <ul>
+          <li>Operational Controls - Day to day processes</li>
+          <li>Technical Controls - hardware and software</li>
+          <li>Maangement Controls - actions taken to manage the system</li>
+        </ul>
+      </ul>
+      <table border="solid">Example Family List
+        <tr>
+          <th>ID</th>
+          <th>FAMILY</th>
+          <th>CLASS</th>
+        </tr>
+        <tr bgcolor="#b5b4b0">
+          <td>AC</td>
+          <td>Access Control</td>
+          <td>Technical</td>
+        </tr>
+        <tr>
+          <td>CA</td>
+          <td>Security Assessment and Authorization</td>
+          <td>Management</td>
+        </tr>
+        <tr bgcolor="#b5b4b0">
+          <td>MP</td>
+          <td>Media Protection</td>
+          <td>Operational</td>
+        </tr>
+      </table>
+      <br>
+      <table border="solid"> Prioritization for Installation Sequence only
+        <tr>
+          <th>Priority Code</th>
+          <th>Sequencing</th>
+          <th>Action</th>
+        </tr>
+        <tr bgcolor="#b5b4b0">
+          <td>Priority Code 1 (P1)</td>
+          <td>FIRST</td>
+          <td>Implement P1 security controls 1st</td>
+        </tr>
+        <tr>
+          <td>Priority Code 2 (P2)</td>
+          <td>SECOND</td>
+          <td>Implement P2 security controls after P1</td>
+        </tr>
+        <tr bgcolor="#b5b4b0">
+          <td>Priority Code 3 (P3)</td>
+          <td>LAST</td>
+          <td>Implement P3 security controls after P2</td>
+        </tr>
+        <tr>
+          <td>Unspecified Priority Code (P0)</td>
+          <td>NONE</td>
+          <td>Security control not selected for baseline</td>
+        </tr>
+      </table>
+      <h3>Common Controls</h3>
+      <ul>
+        <li>Provide consistent and more cost-effective security accross an organization</li>
+        <ul>
+          <li>Accelerates implementation</li>
+          <li>Reduces cost</li>
+          <li>More consistent behavior</li>
+        </ul>
+        <li>Common Control Provider (CCP)</li>
+        <ul>
+          <li>Selected by CIO and CISO</li>
+          <li>Provides for inheritance of controls</li>
+          <p>may be external systems from the one being categorized</p>
+        </ul>
+      </ul>
+    </div>
+    <div>
+      <h2>NIST SP 800-53 Implementation Details</h2>
+      <p>
+        Control selection baseline is the starting point established with the FIPS-199 and NIST 800-53 documents.
+      </p>
+      <ul>
+        <li>Tailoring Controls is accomplished through:</li>
+        <ul>
+          <li>Scoping the system</li>
+          <li>Parameterization</li>
+          <li>Any compensating guidance provided</li>
+        </ul>
+        <li>Supplementing through additional controls uses enhancements provided in the SP 800-53 families of controls</li>
+        <li>Additional consideration criteria are:</li>
+        <ul>
+          <li>Operating environment</li>
+          <li>Organization-specific requirements</li>
+          <li>Threat assessments</li>
+          <li>Business Impact Analysis (BIA) for implemented controls</li>
+        </ul>
+      </ul>
+      <h3>Control Categories</h3>
+      <ul>Primary
+        <li>Preventative</li>
+        <li>Detective</li>
+        <li>Corrective</li>
+      </ul>
+      <ul>Secondary
+        <li>Supplemental</li>
+        <li>Compensating</li>
+        <li>Deterrent</li>
+      </ul>
+      <h3>Kinds of Controls</h3>
+      <ul>
+        <li>Common</li>
+        <ul>
+          <li>Controls that are inherited by one or more organizationa information systems - Like a common firewall</li>
+        </ul>
+        <li>Hybrid</li>
+        <ul>
+          <li>Controls that are implemented in part as Common and part System-specific</li>
+          <li>Like: MS AD Group Policy</li>
+        </ul>
+        <li>System-specific controls</li>
+        <ul>
+          <li>Control that is implemented entirely within the IS under review</li>
+        </ul>
+      </ul>
+      <h2>Monitoring Strategy</h2>
+      <ul>
+        <li>Developed during the initial part of the System Development Life Cycle (SDLC)</li>
+        <li>Should allow for robust review and near real-time awareness of current security state of the system</li>
+        <li>Especially important in highly dynamic environments</li>
+        <li>There are 4 parts to Monitoring:</li>
+        <ol>
+          <li>Configuration Management</li>
+          <li>Security impact analysis of any changes</li>
+          <li>Continuous assessment of the system</li>
+          <li>Security status reporting</li>
+        </ol>
+        <li>Identifies which controls to be monitored, frequency, and assessment approach</li>
+        <li>Duration is determined by the trustworthiness of the common control provider</li>
+      </ul>
+      <h2>Review and Approval of the System Security Plan (SSP)</h2>
+      <ul>
+        <li>Review is conducted by the System Owner (SO) and IS Security Officer (ISSO)</li>
+        <p>Possibly requires CISO office review as well</p>
+        <li>Completed SSP is signed by the SO and the ISSO</li>
+        <li>SSP is presented to the Authorizing Official (AO) for approval</li>
+        <li>SSP is accepted and signed by the AO</li>
+        <ul>
+          <li>Approves system boundaries</li>
+          <li>Approves (MSB) and defined risks</li>
+          <li>Accepts initial risks</li>
+        </ul>
+      </ul>
+    </div>
+  </body>
+</html>
