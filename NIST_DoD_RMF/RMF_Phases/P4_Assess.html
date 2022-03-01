@@ -7,7 +7,161 @@
 </head>
 <body>
   <div>
-    
+    <h2>Assessment of Controls</h2>
+    <ul>
+      <li>Conduct evaluation of system security with the following questions answered:</li>
+      <ul>Are the controls...
+        <li>Implemented correctly?</li>
+        <li>Operating as intended?</li>
+        <li>Producing the desired outcome?</li>
+      </ul>
+      <li>Assessment Tasks</li>
+      <li>Assessment preparation</li>
+      <li>Security controls assessment - execution of assessment</li>
+      <li>Security assessment report (SAR)</li>
+      <li>Remediation actions</li>
+      <li><strong>Security Control Assessor</strong> is the primary role</li>
+      <ul>
+        <li>Common control provider (CCP) and Information System Owner support</li>
+      </ul>
+    </ul>
+    <h3>Assessment Documents</h3>
+    <ul><a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-5/final">NIST SP 800-53A</a>
+      <li>The technical guide to information security testing and assessment</li>
+      <ul>Input documents are:
+        <li>FIPS-199</li>
+        <li>SSP</li>
+        <li>Common control document</li>
+      </ul>
+      <ul>Outputs are:
+        <li>SSP updated</li>
+        <li>SAR completed</li>
+      </ul>
+    </ul>
+    <h3>The Assessment Task</h3>
+    <ul>
+      <li>Assessment preparations</li>
+      <ul>
+        <li>Develop, review and approve a plan to assess the security controls</li>
+        <li>Review existing SSP, CCP, MOU/MOA's, and architecture documents to understand the environment</li>
+      </ul>
+      <li>NIST Guides:</li>
+      <ul>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-53a/rev-5/final">NIST SP 800-53A</a></li>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-115/final">NIST SP 800-115:</a> Technical Guide to Information Security Testing and Assessment</li>
+        <p>Note: The Security controll assessor is the primary role</p>
+      </ul>
+    </ul>
+    <h3>Security Assessment Plan</h3>
+    <ul>
+      <li>Develop a security assessment policy</li>
+      <li>Prioritize and schedule assessment</li>
+      <li>Select and customize testing techniques</li>
+      <li>Establish rules of engagement for testing</li>
+      <li>Determine logistics of assessment</li>
+      <li>Develop the assessment plan</li>
+      <li>Address legal concerns</li>
+      <ul>
+        <li>particularly if testing includes pentesting or is conducted by a 3rd party</li>
+      </ul>
+    </ul>
+    <h2>NIST Methods for Assessment</h2>
+    <ul>
+      <li>Examine</li>
+      <li>Interview</li>
+      <li>Test</li>
+      <ul>Attributes to look for:
+        <li>Depth - Basic/Focused/Comprehensive</li>
+        <li>Coverage - Basic/Focused/Comprehensive</li>
+        <li>Determined by assurance requirements</li>
+        <li>Defined by organization</li>
+      </ul>
+    </ul>
+    <h2>NIST SP 800-53A Controls and Validations</h2>
+    <ul>AC & IA Controls
+      <li>Access Control & Identification and Authentication Controls</li>
+      <p>AC & IA ensure the information system is using proper key management 
+        techniques, tokens, and certificates, correct and verified authentication 
+        methods, access control mechanisms are in plance and active, passwords are controlled, 
+        etc.</p>
+    </ul>
+    <ul>CM, SA, & SI Controls
+      <li>Configuration Management</li>
+      <li>System Acquisition</li>
+      <li>System Integration</li>
+      <p>Define the completeness of understanding and development of the information system components.
+      Controls related to this area are ones that ensure that the IS's policies and processes fully support 
+      the goal of uninterrupted operations, incorporates best practices, includes baseline inventory of 
+      all hardware and software components, is under the control of a configuration control board and has 
+      all patches, upgrades and new applications, etc.</p>
+    </ul>
+    <ul>AU & SC Controls
+      <li>Auditing Accountability</li>
+      <li>System Communication</li>
+      <li>Ensure the information system is:</li>
+      <ul>
+        <li>Being audited and monitored to identify if security incidents are identified in a timely manner</li>
+        <li>Secured so that access is based on the need-to-know and least privilege</li>
+        <li>Implementing an effective network device control program</li>
+        <li>Appropriately managing privileged accounts</li>
+        <li>Identifying and correcting unauthorized changes to data, software, and hardware</li>
+        <li>Using virus protection</li>
+        <li>Blocking Unauthorized VoIP</li>
+        <li>etc.</li>
+      </ul>
+    </ul>
+    <ul>Network Controls
+      <li>Ensure the information system is compliant with NIST and agency connection rules and approval processes;
+        that VPN traffic is visible to network Intrusion Detection Systems (IDS); and remote access is controlled; etc.
+      </li>
+    </ul>
+    <ul>PE Controls
+      <li>Physical and Environmental Controls</li>
+      <ul>
+        <li>Ensure the IS is protected against threats related to temperature, fire, humidity, and physical intrusions.</li>
+        <li>These controls include actions like deploying power cutoff switches, humidity and fire detectors, guards, locks, safes,
+          alarms, media encryption and sanitizing and destroying data media solutions.
+        </li>
+      </ul>
+    </ul>
+    <ul>PS & AT Controls
+      <li>Personnel Security and Awareness & Training</li>
+      <ul>
+        <li>Ensure that the IS has acceptable user policies, training and awareness programs, and conducts background checks, clearances
+          checked, if needed, etc.
+        </li>
+      </ul>
+    </ul>
+    <ul>CP Controls
+      <li>Contingency Planning</li>
+      <ul>Continuity/contingency controls
+        <li>Detail the recovery of operations due to the loss of data, components and infrastructure.</li>
+        <li>These controls include items such as alternate sites, continuous power supply, data backups, disaster/recovery (BDR) plans and exercises,
+          and trusted recovery, etc.
+        </li>
+      </ul>
+    </ul>
+    <p>Each control type has defined objectives, control statements, and subsequent objectives for the assessment.</p>
+    <h3>Building an effective assurance case</h3>
+    <ul>
+      <li>Compiling and presenting evidence</li>
+      <li>Basis for determining effectiveness of controls</li>
+      <li>Product assessments</li>
+      <li>Systems assessments</li>
+      <li>Risk determination</li>
+    </ul>
+    <h2>Assessment Products and Artifacts - The Outcome</h2>
+    <ul>
+      <li>Security Assessment Report (SAR)</li>
+      <p>develop and prepare a report on the assessment issues, findings and recommendations</p>
+      <li>Results of security control assessment:</li>
+      <ul>
+        <li>Implemented correctly</li>
+        <li>Operating as intended</li>
+        <li>Producing the desired results</li>
+      </ul>
+      <li><strong>Security Control Assessor</strong> is the primary</li>
+    </ul>
   </div>
 </body>
 </html>
