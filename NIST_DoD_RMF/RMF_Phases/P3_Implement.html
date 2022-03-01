@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><h1 align="center">Phase 3: Implement</h1>
+  <div align="center">
+      <img src="https://www.f5.com/content/dam/f5-labs-v2/article/articles/edu/20190709_what_is_the_cia_triad/cia_triad.png" height="230" width="260">
+  </div>
+</head>
+  <body>
+    <div>
+      <h2>Implementation of Controls</h2>
+      <ul>
+        <li><strong>Implementation objectives:</strong></li>
+        <ul>
+          <li>Install security controls into the system</li>
+        </ul>
+        <li>The tailoring process involves:</li>
+        <ul>
+          <li>Designating common controls</li>
+          <li>Applying scoping considerations</li>
+          <li>Selecting compensating controls</li>
+          <li>Supplementing the baseline controls</li>
+          <li>Providing implementation specifications</li>
+        </ul>
+        <li>Implementation tasks</li>
+        <ul>
+          <li>Security controls implementation</li>
+          <li>Security controls documentation</li>
+          <li><strong>Primary Role: </strong>Information System Owner</li>
+        </ul>
+      </ul>
+      <h2>Implementation Documents</h2>
+      <br>
+      <h3>NIST SP 800-53r5</h3>
+      <ul>
+        <li>Recommended security controls for federal Information systems</li>
+        <ul>
+          <li>Provides guidelines for selecting and specifying security controls for the information system</li>
+          <li>Helps achieve more secure information systems by providing a "rich" catalog of security controls and measures</li>
+          <li>Also provides the foundation for assessing and measuring the effectiveness of the security controls and measures</li>
+          <p><strong>Note:</strong> Revision 5 added the "IP" Individual Participation control group with 6 controls and the PA - Privacy Authorization which has 4 controls.</p>
+        </ul>
+      </ul>
+      <h3>Tailoring of controls</h3>
+      <ul>3 Primary Areas:
+        <li>Scoping guidance</li>
+        <li>Compensating controls</li>
+        <ul>
+          <li>selected from SP 800-53 Appendix F</li>
+          <li>Implemented when controls from a baseline cannot be implemented due to scoping considerations or other risk-based reasons</li>
+          <li>Provide protection comparable to the control that would have been implemented</li>
+          <li>i.e. a policy or procedure in lieu of an automated control</li>
+        </ul>
+        <li>Organizational-defined parameter specifications</li>
+      </ul>
+      <ul>
+        <li>Scoping considerations help ensure that organizations select and implement only those controls needed for appropriate protection of the information systems</li>
+        <li>Apply scoping considerations as needed to assist with making risk-based decisions on security control selection</li>
+        <li>Scoping considerations are not intended to limit organizations in rendering risk-based decisions</li>
+      </ul>
+      <ul>Supplementing the baseline
+        <li>Sometimes the baseline controls are not sufficient to address specific threats and vulnerabilities</li>
+        <li>Inputs for supplementation may include risk assessment and/or regulations, policies, etc.</li>
+        <li>These are not the same as compensating controls</li>
+        <ul>
+          <li>Compensating controls are put in place when a control cannot meet the current intent</li>
+          <li>Supplemental controls would be on top of compensating controls to address specific risks</li>
+        </ul>
+      </ul>
+      <h3>Privacy - SP 800-53 Appendix J</h3>
+      <ul>
+        <li>Appendix J complements security controls in Appendix F</li>
+        <li>Based on the Fair Information Practices and Principles from the Privacy Act of 1974</li>
+        <li>Draws from the e-Governance Act of 2002, Section 208</li>
+        <li>Updates regularly with privacy-related OMB guidance</li>
+        <li><strong>Note: Rev5 replaced "Chief Privacy Officer" with "Senior Agency Official for Privacy"</strong></li>
+      </ul>
+      <h3>E-authentication Assurance Levels</h3>
+      <ul>
+        <li>Based on the OMB M04-04 and NIST SP 800-63-3</li>
+        <ul>M04-04:
+          <li>Level 1: Little or no confidence in the asserted identity's validity</li>
+          <li>Level 2: Some confidence in the asserted identity's validity</li>
+          <li>Level 3: High confidence in the asserted identity's validity</li>
+          <li>Level 4: Very high confidence in the asserted identity's validity</li>
+        </ul>
+      </ul>
+      <ul>Applying Controls - Documentation
+        <li>Document the control implementations in Security System Plan (SSP)</li>
+        <ul>
+          <li>Planned inputs</li>
+          <li>Expected behavior</li>
+          <li>Expected outputs</li>
+        </ul>
+        <li>Functional description - the "As Implemented" details</li>
+        <li>Traceability matrix back to requirements</li>
+        <li>Platform dependencies</li>
+        <li>Responsible person/CCP</li>
+      </ul>
+      <h2>Types of Management Controls a.k.a Administrative Controls</h2>
+      <ul>Documented policies, guidance and procedures:
+        <li>Risk assessment and management policies/procedures</li>
+        <li>C&A process itself along with signed ATO's</li>
+        <li>Security planning for all systems</li>
+        <li>SDLC manuals and guidance</li>
+        <li>Security program management at higher organizational levels</li>
+      </ul>
+      <h2>Types of Physical Controls</h2>
+      <ul>
+        <li>Automated vs. manual fire detection, inspection, and suppression</li>
+        <li>Automated vs. manual temperature and humidity controls</li>
+        <li>Emergency lighting</li>
+        <li>Voltage regulation</li>
+        <li>Positioning of data displays</li>
+        <li>Data handling and dissemination</li>
+        <li>Facility guarding, access policies, and procedures</li>
+      </ul>
+      <h2>Types of Operational Controls</h2>
+      <ul>Focus on the human element:
+        <li>Policies</li>
+        <li>Procedures</li>
+        <li>Processes</li>
+        <li>Training & Awareness</li>
+      </ul>
+      <ul>Documentation Includes:
+        <li>Configuration management plan</li>
+        <li>Detailed IA architecture documentaiton</li>
+        <li>Hardware/software/firmware baseline inventories</li>
+        <li>Information assurance vulnerability management plan (IAVMP)</li>
+        <li>Incident repsonse plan</li>
+        <li>Disaster recovery & contingency plans</li>
+        <li>Memorandums of Agreement (MOA's)</li>
+        <li>Test plans, procedures, and results</li>
+      </ul>
+      <h2>Technical Controls - a.k.a. Logical Controls</h2>
+      <p>Implemented using software, hardware or firmware that restricts logical access on an inforamtion technology system</p>
+      <h2>Logs</h2>
+      <ul><a href="https://csrc.nist.gov/publications/detail/sp/800-92/final">NIST SP 800-92:</a> Guide to Computer Security Log Management, September 2006
+        <li>Log sources</li>
+        <li>Analyze log data</li>
+        <ul>
+          <li>Proactive log analysis shows potential problems and possible attack</li>
+          <li>Logs are also useful for establishing baselines, forensic analysis, and internal audits</li>
+        </ul>
+        <li>Respond to identified events</li>
+        <li>Long term log data storage</li>
+      </ul>
+      <h2>Incident Response Handling</h2>
+      <ul>
+        <li><a href="https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final">NIST SP 800-61r2:</a> Computer Security Incident Handling Guide</li>
+        <li>Four Steps:</li>
+        <ol>
+          <li>Preparation</li>
+          <li>Detection and analysis</li>
+          <li>Containment, eradicaiton and recovery</li>
+          <li>Post-incident activity</li>
+        </ol>
+      </ul>
+      <h3>Incident Response Reporting</h3>
+      <ul>
+        <li>CAT 0 - Exercise/network defense testing</li>
+        <li>CAT 1 - *Unauthorized Access</li>
+        <li>CAT 2 - *Denial of Service (DoS)</li>
+        <li>CAT 3 - *Malicious code</li>
+        <li>CAT 4 - *Inappropriate usage</li>
+        <li>CAT 5 - Scans/probes/attempted access</li>
+        <li>CAT 6 - Investigation</li>
+        <p style="color:Blue">* Any incident that involves compromised PII must be reported to US-CERT within 1 Hour of detection regardless of the incident category reporting timeframe</p>
+      </ul>
+      <h3>Incident Response Agencies:</h3>
+      <ul>
+        <li>US-CERT</li>
+        <li>DOD-CERT</li>
+        <li>Information Analysis Infrasturcture Protection (IAIP)</li>
+        <li>CERT Coordination Center (CERT/CC)</li>
+        <li>Information Sharing and Analysis Centers (ISAC)</li>
+      </ul>
+      <h2>Contingency Plan Criteria</h2>
+      <ul>
+        <li>Maximum Tolerable Downtime (MTD)</li>
+        <li>Recovery Time Objective (RTO) - how long you have to restore regular business operations</li>
+        <li>Recovery Point Objective (RPO) - normal operations</li>
+        <li>Work Recovery Time (WRT)</li>
+      </ul>
+    </div>
+  </body>
+</html>
