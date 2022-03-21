@@ -1,0 +1,152 @@
+<!-- bc_day1.html-->
+<head>
+    <title>Attacks/Threats/Vulnerabilities</title>
+    <h1 align="center">Attacks/Threats/Vulnerabilities</h1>
+    <link rel="stylesheet" type="text/css" href="C:\Users\matth\GitHub\cTIA601\styles.css">
+</head>
+
+<body>
+    
+    <div>
+        <p>Risk: The likelihood of a threat actor taking advantage of a vulnerability
+            by using a threat against an IT Asset.</p>
+    
+        <ol>Threat Actor Types:
+            <li>Hackers</li>
+            <li>Hacktivist</li>
+            <li>Script Kiddies</li>
+            <li>Insiders</li>
+            <li>Competitors</li>
+            <li>Shadow IT</li>
+            <li>Criminal syndicates - most commonly DDOS groups</li>
+            <li>State Actors</li>
+            <li>Advanced Persistent Threat (APT)</li>
+        </ol>
+    
+        <ul>
+            <li>Vulnerabilities: a weakness in the protections of an asset</li>
+            <li>Threat: an action taken against an asset</li>
+            <p>sometimes called an exploit</p>
+            <li>Remediation: Fixing the vulnerabilities</li>
+        </ul>
+    
+        <ul>Attack Vectors:
+            <li>Pathways to gain acess to infrastructure</li>
+            <li>Weak configs</li>
+            <li>Open firewall ports that aren't needed</li>
+            <li>Lack of user security awareness</li>
+            <li>Lack of MFA</li>
+            <li>Missing patches</li>
+            <li>Infected external drives</li>
+            <li>Supply-Chain Attacks</li>
+            <ul>
+                <li>Mfg's</li>
+                <li>Contractors</li>
+                <li>Implementer</li>
+                <li>Outsourced software</li>
+            </ul>
+        </ul>
+    
+        <ul>
+            <li>Interconnection security agreements (ISA's)</li>
+            <p>Apply when connecting different entities together</p>
+            <li>Service Level Agreements (SLA's)</li>
+            <p>Detail expected service uptime from a provider</p>
+            <li>Memorandums of Understanding (MOU's)</li>
+            <p>State broad acreement terms between parties.</p>
+            <li>Memorandums of Agreement (MOA's)</li>
+            <p>Much more detailed than MOU's</p>
+            <li>Non-disclosure Agreements (NDA's): prevent sensitive data disclosure to 3rd parties</li>
+        </ul>
+        <h2>Threat Intelligence</h2>
+        <ol>Potential Sources:
+            <li>Closed/Proprietary</li>
+            <li>OSINT</li>
+            <ul>
+                <li>Gov't reports</li>
+                <li>Media</li>
+                <li>Academic</li>
+            </ul>
+            <li>Google Hacking Exploit DB - www.exploit-db.com</li>
+            <li>File repos like GitHub</li>
+            <li>cve.mitre.org</li>
+            <li>Dark Web/dark net</li>
+        </ol>
+    </div>
+    <div>
+        <h2 align="center">Firewalls</h2>
+            <ul>
+                <li>Gen1</li>
+                <ul>
+                    <li>Stateless packet filtering only</li>
+                    <li>susceptible to IP spoofing</li>
+                </ul>
+                <li>Gen2</li>
+                <ul>
+                    <li>Enables stateful packet filtering</li>
+                    <li>MITM attackers setup Proxy IP servers in front of their C2 server, employing dynamic DNS
+                        which allows the IP to constantly change - making it very difficult to track.
+                    </li>
+                </ul>
+                <li>Gen3</li>
+                <li>Gen4</li>
+                <li>Gen5</li>
+            </ul>
+            <h2>Hashes</h2>
+            <p>In linux <span class="cb">$user: md5sum {obj-target}</span> creates a 
+            hash from a file</p>
+
+            <h2 align="center">Attacks</h2>
+            <ul>Password Attack Types
+                <li>Brute Force: </li>
+                <li>Password Spray: Trying a password against a list of user names</li>
+                <li>Dictionary Attack: If you can READ THE WORDS tried in the log</li>
+            </ul>
+            <h3>Supply Chain Attacks</h3>
+            <ul>
+                <li>Compromising a software repository rather than a specific target company</li>
+            </ul>
+            <p>Impacts the Integrity component of the CIA Triad</p>
+            <img class="rpng" src="C:\Users\matth\GitHub\cTIA601\resources\cia_triad.png"></img>
+            <ul>DOS/DDOS Attacks
+                <li>employs spoofing of the source IP address</li>
+                <li>{{Smurf}}</li>
+                <li>{{Fraggle}}</li>
+            </ul>
+            <ol>TCP Handshake Steps
+                <li>SYN</li>
+                <li>SYN/ACK</li>
+                <li>ACK</li>
+            </ol>
+            <h3>Application & Buffer Overflow Attacks</h3>
+            <ul>
+                <li>Buffer Overflow</li>
+                <p>Create buffer overflow shell code with
+                    <a href="https://www.offensive-security.com/metasploit-unleashed/msfvenom/"> MSF Venom</a></p>
+                <li>Privilege Escalation</li>
+                <li>Injection Attacks</li>
+                <li>{{CSRF}}</li>
+            </ul>
+        <h3>MAC & IP Spoofing</h3>
+            <ul></ul>
+        <h3>Directory Traversal Examples</h3>
+            <ul>
+                <li>url/../../../</li>
+                <li>url/..2fs..2fs</li>
+            </ul>
+        <h3>SSL Stripping</h3>
+        <p>{{SSL Stripping}}</p>
+        <p>Shows up on the client side logs as http throughout the activity
+            rather than a https secured connection.
+        </p>
+        <p><strong>Note: </strong><span class="cb">iptables</span> is a firewall management tool</p>
+    </div>
+    <br>
+    <div>
+        <h2 align="center">Homework</h2>
+        <div class="hwk">
+            <p>Recursively study questions 481 -> 400</p>
+            <p>Read the answer THEN the question.</p>
+        </div>
+    </div>
+</body>

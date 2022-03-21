@@ -1,0 +1,40 @@
+#nav {
+    width: 19%;
+    display: inline-block;
+    background: #429cd6;
+    border: 1px solid #3c87b2;
+
+}
+
+#page-content {
+    width: 79%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    padding-top: 0px;
+}
+/* 
+a {
+    color: black;
+    text-decoration: none;
+} */
+
+/*code-block style*/
+.cb {
+    font-size: 12px;
+    color: magenta;
+    background-color: antiquewhite;
+}
+
+/*embedded image style */
+.rpng {
+    height: 330px;
+    width: 360px;
+}
+
+/* homework style */
+.hwk {
+    background-color: black;
+    color: red;
+    font-weight: bold;
+}

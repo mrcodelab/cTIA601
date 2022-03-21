@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CompTIA Security+ SY0-601
+    </title>
+</head>
+
+<!-- Load AngularJS and Angular Route JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<body ng-app="myApp">
+    <script src="C:\Users\matth\GitHub\cTIA601\app.js"></script>
+
+    <!-- AngularJS Navigation -->
+    <div id="nav">
+        <ul>
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!about">About</a></li>
+            <li><a href="#!services">Services</a></li>
+            <li><a href="#!projects">Projects</a></li>
+        </ul>
+    </div>
+    <div id="page-content">
+        <h1>CompTIA Security+ SY0-601</h1>
+
+        <!-- this is where page content will be loaded -->
+        <div ng-view></div>
+    </div>
+    <!-- Load AngularJS Module and Angular Route Configuration -->
+    <script type="text/javascript" src="C:\Users\matth\GitHub\cTIA601\server\routes.js"></script>
+</body>
+
+</html>

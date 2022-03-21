@@ -1,0 +1,34 @@
+[
+    {
+        "Defs" : "definitions and 'Golden Words'",
+        "contents" : [
+            {
+                "Pharming" : "Social engineering attack that RELIES on a SMB visiting a fake banking website",
+                "Pretext" : "Creating the fake backstory for a social engineering attack",
+                "Watering Hole Attack" : "Is an infected, live website rather than a clone of a website",
+                "hash" : "hash=integrity",
+                "Fileless Malware" : "Malware in RAM",
+                "Polymorphic Infections" : "Evade detection by traditional AV products",
+                "Do FIRST after ransomware recovery" : "Perform regular, daily testing of FULL BACKUPS",
+                "Trjoans" : "Malware disguised by or hidden in seemingly harmless software",
+                "Smurf" : "TCP DOS Attack",
+                "Fraggle" : "UDP DOS Attack",
+                "Internet Forum" : "for the exam indicates a XXS attack on a compromised web site",
+                "SSL Stripping" : "MITM attacks"
+            }
+        ]
+    },
+    {
+        "Acronyms" : "",
+        "contents" : [
+            {
+                "IOC" : "Indicators of Compromise",
+                "PUP" : "Potentially Unwanted Program - slows computer down noticably",
+                "RAT" : "Remote Access Trojan",
+                "CSRF" : "Cross Site Request Forgery - plain text token",
+                "XSRF" : "Cross Site Request Forgery - encrypted token",
+                "MITM" : "Man In The Middle"
+            }
+        ]
+    }
+]
