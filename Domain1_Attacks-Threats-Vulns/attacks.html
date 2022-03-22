@@ -18,6 +18,8 @@
             Windows systems because Mac/Linux SALT passwords by default -
             Windows does not.
         </p>
+        <h3>Dictionary Attacks</h3>
+
         <h3>Supply Chain Attacks</h3>
         <ul>
             <li>Compromising a software repository rather than a specific target company</li>
@@ -58,5 +60,58 @@
             </ul>
         <strong class="hwk">Never allow ports 445/139 access to the internet!!!</strong>
         <p>Ports 445/139 allow SMB attacks</p>
+
+        <h2 align="center">Network Attacks</h2>
+        <h3>ARP Poisoning & MITM Attacks</h3>
+        <ul>
+            <li>{{ARP}} - highly targeted</li>
+            <li>Allows an attacker to display 2 IP's with the same MAC address</li>
+            <li>An attacker uses ARP poisoning to run a MITM attack</li>
+            <li>Attacker intercepts and relays communications to intercept session keys</li>
+            <li>Defense is port security</li>
+        </ul>
+
+        <h3>Evil Twin</h3>
+        <ol>
+            <li>Has the program "yesgar" on it - German for "yes man"</li>
+            <li>Able to deauth the WPA/WPA2 handshake</li>
+            <li>Able to create an "Evil Portal" - a captive portal like a public WiFi</li>
+            <li>Broadcasts the real SSID</li>
+        </ol>
+
+        <h3>{{WPS}}</h3>
+        <p>WPS is always a numeric pin code and can be guessed between seconds and hours, but 
+            is easily crackable.
+        </p>
+
+        <h4><a href="https://www.youtube.com/watch?v=EKks3vfiy6Q">NFC Hacking Example Video</a></h4>
+
+        <h3>Man In The Browser</h3>
+            <ul>
+                <li>Done through a tool called BeEF</li>
+                <li>The "hook" is placed in an iFrame and added to a legitimate website to create a Waterhole</li>
+                <li>Related to XSS</li>
+            </ul>
+        
+        <h3>DNS Poisoning</h3>
+        <ul>
+            <li>An attacker targets a DNS to force a redirection to malicious sites</li>
+            <li>Can be done from either client-side or server-side poisoning</li>
+            <li>DNS is a race because the attack tool will try to beat the internet DNS services</li>
+            <ul>
+                <li>Only the 1st response will be used</li>
+            </ul>            
+        </ul>
+        <h3>MAC Attacks</h3>
+        <ul>MAC Floods
+            <li>1 port with many physical addresses</li>
+            <li>Filling the table by "blowing up" can force the switch into Hub-mode</li>
+            <li>Will flood all switches on a network</li>
+            <li>Can target a specific VLAN only</li>
+            <li>Defense is port security</li>
+        </ul>
+        <ul>MAC Clone
+            <li>Changing the attack device NIC physical address to match a victim computer's MAC</li>
+        </ul>
     </div>
 </body>

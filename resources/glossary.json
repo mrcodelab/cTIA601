@@ -22,6 +22,7 @@
         "Acronyms" : "",
         "contents" : [
             {
+                "ARP" : "Address Resolution Protocol - a set of network addressing tables",
                 "IOC" : "Indicators of Compromise",
                 "PUP" : "Potentially Unwanted Program - slows computer down noticably",
                 "RAT" : "Remote Access Trojan",
@@ -32,7 +33,12 @@
                 "WEP" : "Wired Equivalent Privacy",
                 "IV" : "Initialization Vector - when used in context of cryptography",
                 "PSK" : "Pre Shared Key",
-                "WPA - TKIP" : ""
+                "AES" : "Advanced Encryption Standard",
+                "WPA - TKIP" : "WiFi Protected Access - Transient Key Integrity Protocol",
+                "WPA3 - SAE" : "WPA version 3 - Simultaneous Authentication of Equals",
+                "DHCP" : "Dynamic Host Configuration Protocol",
+                "WPS" : "Wireless Protected Setup",
+                "CAM": "Content Allocation Memory table - a switch table"
             }
         ]
     }
