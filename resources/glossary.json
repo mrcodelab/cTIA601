@@ -19,7 +19,10 @@
                 "STIX": "A shared threat intelligence format for IoC's",
                 "End of Life" : "Segment the asset off the network that can connect to the internet",
                 "Intrusive Scan" : "run the exploits on the target system",
-                "Non-intrusive Scan" : "stop short of running the exploits on the target system"
+                "Non-intrusive Scan" : "stop short of running the exploits on the target system",
+                "Tokenization" : "process of subsituting sensitive data like credit cards",
+                "Transit Gateway" : "A way of connecting multiple VPC's",
+                "Globally distributed instances/ Cloud" : "Indicates CASB"
             }
         ]
     },
@@ -56,7 +59,27 @@
                 "ISACs" : "Industry specific collaborative vulnerability collaboration",
                 "Tor" : "The Onion Router",
                 "SIEM" : "Security Information & Event Management",
-                "SOAR" : "Security Orchestration Automation and Response"
+                "SOAR" : "Security Orchestration Automation and Response",
+                "DLP" : "Data Loss Prevention",
+                "API" : "Application Programming Interface",
+                "HSM" : "Hardware Security Module",
+                "TPM" : "Trusted Platform Module",
+                "CASB" : "Cloud Access Security Broker",
+                "BIA" : "Business Impact Analysis",
+                "MSP" : "Managed Services Provider",
+                "MSSP" : "Managed Security Services Provider - security focussed",
+                "VPC" : "Virtual Private Cloud",
+                "IaaS" : "Infrastructure as a Service",
+                "PaaS" : "Platform as a Service",
+                "SaaS" : "Software as a Service",
+                "ABAC" : "Attribute Based Access Controls",
+                "DAC" : "Discretionary Access Controls",
+                "GBAC" : "Graph-based Access Controls",
+                "IBAC" : "Identity Based Access Controls",
+                "MAC" : "Mandatory Access Controls",
+                "RBAC" : "Role Based Access Controls",
+                "WAF" : "Web Application Firewall - a.k.a. Reverse Proxy",
+                "FIM" : "File Integrity Management - A tool to compare changes to file hashes"
             }
         ]
     }
