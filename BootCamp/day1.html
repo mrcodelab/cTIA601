@@ -8,20 +8,30 @@
 <body>
     
     <div>
+        <div id="agreements">
+            <ul>
+                <li>{{ISA}} - Apply when connecting different entities together</li>
+                <li>{{SLA}} - Detail expected service uptime from a provider</li>
+                <li>{{MOU}} - State broad acreement terms between parties.</li>
+                <li>{{MOA}} - Much more detailed than MOU's</li>
+            </ul>
+        </div>
         <p>Risk: The likelihood of a threat actor taking advantage of a vulnerability
             by using a threat against an IT Asset.</p>
-    
-        <ol>Threat Actor Types:
-            <li>Hackers</li>
-            <li>Hacktivist</li>
-            <li>Script Kiddies</li>
-            <li>Insiders</li>
-            <li>Competitors</li>
-            <li>Shadow IT</li>
-            <li>Criminal syndicates - most commonly DDOS groups</li>
-            <li>State Actors</li>
-            <li>Advanced Persistent Threat (APT)</li>
-        </ol>
+        <div id="threatactors">
+            <ol>Threat Actor Types:
+                <li>Hackers</li>
+                <li>Hacktivist</li>
+                <li>Script Kiddies</li>
+                <li>Insiders</li>
+                <li>Competitors</li>
+                <li>Shadow IT</li>
+                <li>Criminal syndicates - most commonly DDOS groups</li>
+                <li>State Actors</li>
+                <li>Advanced Persistent Threat (APT)</li>
+            </ol>
+        </div>
+        
     
         <ul>
             <li>Vulnerabilities: a weakness in the protections of an asset</li>
@@ -29,83 +39,81 @@
             <p>sometimes called an exploit</p>
             <li>Remediation: Fixing the vulnerabilities</li>
         </ul>
-    
-        <ul>Attack Vectors:
-            <li>Pathways to gain acess to infrastructure</li>
-            <li>Weak configs</li>
-            <li>Open firewall ports that aren't needed</li>
-            <li>Lack of user security awareness</li>
-            <li>Lack of MFA</li>
-            <li>Missing patches</li>
-            <li>Infected external drives</li>
-            <li>Supply-Chain Attacks</li>
-            <ul>
-                <li>Mfg's</li>
-                <li>Contractors</li>
-                <li>Implementer</li>
-                <li>Outsourced software</li>
+        <div id="attkvectors">
+            <ul>Attack Vectors:
+                <li>Pathways to gain acess to infrastructure</li>
+                <li>Weak configs</li>
+                <li>Open firewall ports that aren't needed</li>
+                <li>Lack of user security awareness</li>
+                <li>Lack of MFA</li>
+                <li>Missing patches</li>
+                <li>Infected external drives</li>
+                <li>Supply-Chain Attacks</li>
+                <ul>
+                    <li>Mfg's</li>
+                    <li>Contractors</li>
+                    <li>Implementer</li>
+                    <li>Outsourced software</li>
+                </ul>
             </ul>
-        </ul>
-    
-        <ul>
-            <li>Interconnection security agreements (ISA's)</li>
-            <p>Apply when connecting different entities together</p>
-            <li>Service Level Agreements (SLA's)</li>
-            <p>Detail expected service uptime from a provider</p>
-            <li>Memorandums of Understanding (MOU's)</li>
-            <p>State broad acreement terms between parties.</p>
-            <li>Memorandums of Agreement (MOA's)</li>
-            <p>Much more detailed than MOU's</p>
-            <li>Non-disclosure Agreements (NDA's): prevent sensitive data disclosure to 3rd parties</li>
-        </ul>
-        <h2>Threat Intelligence</h2>
-        <ol>Potential Sources:
-            <li>Closed/Proprietary</li>
-            <li>OSINT</li>
-            <ul>
-                <li>Gov't reports</li>
-                <li>Media</li>
-                <li>Academic</li>
-            </ul>
-            <li>Google Hacking Exploit DB - www.exploit-db.com</li>
-            <li>File repos like GitHub</li>
-            <li>cve.mitre.org</li>
-            <li>Dark Web/dark net</li>
-        </ol>
+        </div>
+           
+        <div id="threatintel">
+            <h2>Threat Intelligence</h2>
+            <ol>Potential Sources:
+                <li>Closed/Proprietary</li>
+                <li>OSINT</li>
+                <ul>
+                    <li>Gov't reports</li>
+                    <li>Media</li>
+                    <li>Academic</li>
+                </ul>
+                <li>Google Hacking Exploit DB - www.exploit-db.com</li>
+                <li>File repos like GitHub</li>
+                <li>cve.mitre.org</li>
+                <li><a href="https://otx.alienvault.com/">AlienVault</a></li>
+                <li>Dark Web/dark net</li>
+            </ol>
+        </div>        
     </div>
     <div>
-        <h2 align="center">Access Control Models</h2>
-        <ul>
-            <li>ABAC: Attribute Based Access Controls</li>
-            <li>DAC: Discretionary Access Controls</li>
-            <li>GBAC: Graph-based Access Controls</li>
+        <div id="acm">
+            <h2 align="center">Access Control Models</h2>
             <ul>
-                <li>Compared to other approaches like RBAC or ABAC, the main difference is that in
-                    GBAC access rights are defined using an organizational query language instead of total enumeration.</li>
-            </ul>
-            <li>IBAC: Identity Based Access Controls</li>
-            <li>MAC: Mandatory Access Controls</li>
-            <li>RBAC: Role Based Access Controls</li>
-        </ul>
-        <h2 align="center">Firewalls</h2>
-            <p><strong>Note: </strong><span class="cb">iptables</span> is a firewall management tool</p>
-            <ul>
-                <li>Gen1</li>
+                <li>ABAC: Attribute Based Access Controls</li>
+                <li>DAC: Discretionary Access Controls</li>
+                <li>GBAC: Graph-based Access Controls</li>
                 <ul>
-                    <li>Stateless packet filtering only</li>
-                    <li>susceptible to IP spoofing</li>
+                    <li>Compared to other approaches like RBAC or ABAC, the main difference is that in
+                        GBAC access rights are defined using an organizational query language instead of total enumeration.</li>
                 </ul>
-                <li>Gen2</li>
-                <ul>
-                    <li>Enables stateful packet filtering</li>
-                    <li>MITM attackers setup Proxy IP servers in front of their C2 server, employing dynamic DNS
-                        which allows the IP to constantly change - making it very difficult to track.
-                    </li>
-                </ul>
-                <li>Gen3</li>
-                <li>Gen4</li>
-                <li>Gen5</li>
+                <li>IBAC: Identity Based Access Controls</li>
+                <li>MAC: Mandatory Access Controls</li>
+                <li>RBAC: Role Based Access Controls</li>
             </ul>
+        </div>"
+       <div id="firewalls">
+           <h2 align="center">Firewalls</h2>
+                <p><strong>Note: </strong><span class="cb">iptables</span> is a firewall management tool</p>
+                <ul>
+                    <li>Gen1</li>
+                    <ul>
+                        <li>Stateless packet filtering only</li>
+                        <li>susceptible to IP spoofing</li>
+                    </ul>
+                    <li>Gen2</li>
+                    <ul>
+                        <li>Enables stateful packet filtering</li>
+                        <li>MITM attackers setup Proxy IP servers in front of their C2 server, employing dynamic DNS
+                            which allows the IP to constantly change - making it very difficult to track.
+                        </li>
+                    </ul>
+                    <li>Gen3</li>
+                    <li>Gen4</li>
+                    <li>Gen5</li>
+                </ul>
+       </div>
+        <div id="hashes">
             <h2>Hashes</h2>
             <p>In linux <span class="cb">$user: md5sum {obj-target}</span> creates a 
             hash from a file</p>
@@ -116,6 +124,7 @@
             </ol>
             <h2 align="center">Attacks</h2>
             <a href="C:\Users\matth\GitHub\cTIA601\Domain1_Attacks-Threats-Vulns\attacks.html">Attacks</a>        
+        </div>
     </div>
     <!-- <br>
     <div>

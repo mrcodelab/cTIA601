@@ -1,0 +1,38 @@
+[
+    {
+        "Non-secure Ports" : "",
+        "contents" : [
+            {
+                "80" : "http",
+                "23" : "telnet",
+                "445" : "SMB",
+                "139" : "SMB",
+                "8080" : "Tomcat Startup - webserver",
+                "20" : "FTP - UDP",
+                "21" : "FTP - TCP",
+                "389": "LDAP",
+                "161" : "SNMP",
+                "25" : "SMTP",
+                "3389" : "Microsoft RDP",
+                "53" : "DNS",
+                "143" : "IMAP",
+                "67" : "DHCP server",
+                "68" : "DHCP client",
+                "995" : "POP3"
+            }
+        ]
+    },
+    {
+        "Secure Ports" : "",
+        "contents" : [
+            {
+                "22" : "SSH",
+                "443" : "https",
+                "8443" : "Tomcat Startup - with SSL",
+                "636" : "LDAP-S",
+                "993" : "IMAP-S",
+                "115" : "SFTP"
+            }
+        ]
+    }
+]
