@@ -27,7 +27,12 @@
                 "RAT" : "Remote Access Trojan",
                 "CSRF" : "Cross Site Request Forgery - plain text token",
                 "XSRF" : "Cross Site Request Forgery - encrypted token",
-                "MITM" : "Man In The Middle"
+                "MITM" : "Man In The Middle",
+                "SIP" : "Session Initiation Protocol",
+                "WEP" : "Wired Equivalent Privacy",
+                "IV" : "Initialization Vector - when used in context of cryptography",
+                "PSK" : "Pre Shared Key",
+                "WPA - TKIP" : ""
             }
         ]
     }

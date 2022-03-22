@@ -1,0 +1,62 @@
+<!--attacks.html-->
+<head>
+    <title>Attacks</title>
+    <h1 align="center">Attacks</h1>
+    <link rel="stylesheet" type="text/css" href="C:\Users\matth\GitHub\cTIA601\styles.css">
+</head>
+
+<body>
+    <div>
+        <h2>Password Attacks</h2>
+        <ul>Password Attack Types
+            <li>Brute Force: All password attacks are brute force</li>
+            <li>Password Spray: Trying a password against a list of user names</li>
+            <li>Dictionary Attack: If you can READ THE WORDS tried in the log</li>
+        </ul>
+        <h3>Rainbow Tables</h3>
+        <p>A precompiled hash table mapping cracked passwords. Used against
+            Windows systems because Mac/Linux SALT passwords by default -
+            Windows does not.
+        </p>
+        <h3>Supply Chain Attacks</h3>
+        <ul>
+            <li>Compromising a software repository rather than a specific target company</li>
+        </ul>
+        <p>Impacts the Integrity component of the CIA Triad</p>
+        <img class="rpng" src="C:\Users\matth\GitHub\cTIA601\resources\cia_triad.png"></img>
+        <ul>DOS/DDOS Attacks
+            <li>employs spoofing of the source IP address</li>
+            <li>{{Smurf}}</li>
+            <li>{{Fraggle}}</li>
+        </ul>
+        <h3>Application & Buffer Overflow Attacks</h3>
+        <ul>
+            <li>Buffer Overflow</li>
+            <p>Create buffer overflow shell code with
+                <a href="https://www.offensive-security.com/metasploit-unleashed/msfvenom/"> MSF Venom</a>
+            </p>
+            <li>Privilege Escalation</li>
+            <li>Injection Attacks</li>
+            <li>{{CSRF}}</li>
+        </ul>
+        <h3>MAC & IP Spoofing</h3>
+        <ul></ul>
+        <h3>Directory Traversal Examples</h3>
+        <ul>
+            <li>url/../../../</li>
+            <li>url/..2fs..2fs</li>
+        </ul>
+        <h3>SSL Stripping</h3>
+        <p>{{SSL Stripping}}</p>
+        <p>Shows up on the client side logs as http throughout the activity
+            rather than a https secured connection.
+        </p>
+        <h3>Replay Attacks</h3>
+        <h3>Driver Manipulations</h3>
+            <ul>Shimming:
+                <li>commonly used as a way to support legacy software.</li>
+            </ul>
+        <strong class="hwk">Never allow ports 445/139 access to the internet!!!</strong>
+        <p>Ports 445/139 allow SMB attacks</p>
+    </div>
+</body>

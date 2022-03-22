@@ -74,7 +74,21 @@
         </ol>
     </div>
     <div>
+        <h2 align="center">Access Control Models</h2>
+        <ul>
+            <li>ABAC: Attribute Based Access Controls</li>
+            <li>DAC: Discretionary Access Controls</li>
+            <li>GBAC: Graph-based Access Controls</li>
+            <ul>
+                <li>Compared to other approaches like RBAC or ABAC, the main difference is that in
+                    GBAC access rights are defined using an organizational query language instead of total enumeration.</li>
+            </ul>
+            <li>IBAC: Identity Based Access Controls</li>
+            <li>MAC: Mandatory Access Controls</li>
+            <li>RBAC: Role Based Access Controls</li>
+        </ul>
         <h2 align="center">Firewalls</h2>
+            <p><strong>Note: </strong><span class="cb">iptables</span> is a firewall management tool</p>
             <ul>
                 <li>Gen1</li>
                 <ul>
@@ -95,71 +109,20 @@
             <h2>Hashes</h2>
             <p>In linux <span class="cb">$user: md5sum {obj-target}</span> creates a 
             hash from a file</p>
-
-            <h2 align="center">Attacks</h2>
-            <ul>Password Attack Types
-                <li>Brute Force: </li>
-                <li>Password Spray: Trying a password against a list of user names</li>
-                <li>Dictionary Attack: If you can READ THE WORDS tried in the log</li>
-            </ul>
-            <h3>Supply Chain Attacks</h3>
-            <ul>
-                <li>Compromising a software repository rather than a specific target company</li>
-            </ul>
-            <p>Impacts the Integrity component of the CIA Triad</p>
-            <img class="rpng" src="C:\Users\matth\GitHub\cTIA601\resources\cia_triad.png"></img>
-            <ul>DOS/DDOS Attacks
-                <li>employs spoofing of the source IP address</li>
-                <li>{{Smurf}}</li>
-                <li>{{Fraggle}}</li>
-            </ul>
             <ol>TCP Handshake Steps
                 <li>SYN</li>
                 <li>SYN/ACK</li>
                 <li>ACK</li>
             </ol>
-            <h3>Application & Buffer Overflow Attacks</h3>
-            <ul>
-                <li>Buffer Overflow</li>
-                <p>Create buffer overflow shell code with
-                    <a href="https://www.offensive-security.com/metasploit-unleashed/msfvenom/"> MSF Venom</a></p>
-                <li>Privilege Escalation</li>
-                <li>Injection Attacks</li>
-                <li>{{CSRF}}</li>
-            </ul>
-        <h3>MAC & IP Spoofing</h3>
-            <ul></ul>
-        <h3>Directory Traversal Examples</h3>
-            <ul>
-                <li>url/../../../</li>
-                <li>url/..2fs..2fs</li>
-            </ul>
-        <h3>SSL Stripping</h3>
-        <p>{{SSL Stripping}}</p>
-        <p>Shows up on the client side logs as http throughout the activity
-            rather than a https secured connection.
-        </p>
-        <p><strong>Note: </strong><span class="cb">iptables</span> is a firewall management tool</p>
+            <h2 align="center">Attacks</h2>
+            <a href="C:\Users\matth\GitHub\cTIA601\Domain1_Attacks-Threats-Vulns\attacks.html">Attacks</a>        
     </div>
-    <br>
+    <!-- <br>
     <div>
         <h2 align="center">Homework</h2>
         <div class="hwk">
             <p>Recursively study questions 481 -> 400</p>
             <p>Read the answer THEN the question.</p>
         </div>
-    </div>
-    <h2 align="center">Access Control Models</h2>
-    <ul>
-        <li>ABAC: Attribute Based Access Controls</li>
-        <li>DAC: Discretionary Access Controls</li>
-        <li>GBAC: Graph-based Access Controls</li>
-        <ul>
-            <li>Compared to other approaches like RBAC or ABAC, the main difference is that in 
-                GBAC access rights are defined using an organizational query language instead of total enumeration.</li>
-        </ul>
-        <li>IBAC: Identity Based Access Controls</li>
-        <li>MAC: Mandatory Access Controls</li>
-        <li>RBAC: Role Based Access Controls</li>
-    </ul>
+    </div> -->
 </body>
