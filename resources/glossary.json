@@ -14,7 +14,12 @@
                 "Smurf" : "TCP DOS Attack",
                 "Fraggle" : "UDP DOS Attack",
                 "Internet Forum" : "for the exam indicates a XXS attack on a compromised web site",
-                "SSL Stripping" : "MITM attacks"
+                "SSL Stripping" : "MITM attacks",
+                "TAXII": "A threat-feed client-server architecture supporting STIX format",
+                "STIX": "A shared threat intelligence format for IoC's",
+                "End of Life" : "Segment the asset off the network that can connect to the internet",
+                "Intrusive Scan" : "run the exploits on the target system",
+                "Non-intrusive Scan" : "stop short of running the exploits on the target system"
             }
         ]
     },
@@ -22,6 +27,12 @@
         "Acronyms" : "",
         "contents" : [
             {
+                "ISAs" : "Interconnection Security Agreements",
+                "SLA": "Service Level Agreement",
+                "MOU" : "Memorandum of Understanding",
+                "MOA" : "Memorandum of Agreement",
+                "NDA" : "Non-disclosure Agreements",
+                "EOL" : "End of Life",
                 "ARP" : "Address Resolution Protocol - a set of network addressing tables",
                 "IOC" : "Indicators of Compromise",
                 "PUP" : "Potentially Unwanted Program - slows computer down noticably",
@@ -38,7 +49,14 @@
                 "WPA3 - SAE" : "WPA version 3 - Simultaneous Authentication of Equals",
                 "DHCP" : "Dynamic Host Configuration Protocol",
                 "WPS" : "Wireless Protected Setup",
-                "CAM": "Content Allocation Memory table - a switch table"
+                "CAM": "Content Allocation Memory table - a switch table",
+                "NVD" : "National Vulnerability Database",
+                "CVE" : "Common Vulnerabilities and Exposures",
+                "CVSS" : "Common Vulnerability Scoring System",
+                "ISACs" : "Industry specific collaborative vulnerability collaboration",
+                "Tor" : "The Onion Router",
+                "SIEM" : "Security Information & Event Management",
+                "SOAR" : "Security Orchestration Automation and Response"
             }
         ]
     }

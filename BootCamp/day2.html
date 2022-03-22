@@ -39,4 +39,61 @@
             Creating the evil portal requires some photoshop, but is easy.
         </p>
     </div>
+    <div id="weblayers">
+        <ul>
+            <li>Internet</li>
+            <li>Deep Web</li>
+            <ul>
+                <li>{{Tor}} is the network beyond the fully indexed, DNS web</li>                
+            </ul>
+        </ul>
+    </div>
+    <div id="specificvuln">
+        <ul>
+            <li>Patching</li>
+            <li>Default configs</li>
+            <li>Weak cipher suites</li>
+            <li>Insecure Protocols</li>
+            <li>Non-secure ports</li>
+            <li>Buffer vulnerabilities</li>
+            <li>System sprawl - system has grown with incomplete documentation</li>
+        </ul>
+    </div>
+    <div id="scanconcepts">
+        <ul>
+            <li>Passive scanning is designed not to interfer with the network or system being scanned</li>
+            <li>Goals:</li>
+            <ul>
+                <li>Identify missing patches</li>
+                <li>Identify open ports that should be closed</li>
+                <li>Enumerate shadow IT connections</li>
+                <li>Identifying Misconfigurations - like putting <span class="cb">/etc/</span>on the internet</li>                
+            </ul>
+            <li>False Positives</li>
+            <li>Intrusiveness</li>
+            <ul>
+                <li>{{Intrusive}}</li>
+                <li>{{Non-Intrusive}}</li>
+                <li>the best scan type is called <span class="emphasized">Credentialed</span> - which includes usernames & passwords</li>
+            </ul>
+            <li>{{SIEM}} - a log aggregation system which collects logs from all connected systems</li>
+            <ul>
+                <li>Don't handle patching</li>
+                <li><a href="https://www.splunk.com/">Splunk</a>, <a href="https://www.logrhythm.com">LogRhythm</a>, et al.</li>
+                <li>Sometimes getting the logs to be ingestable for the SIEM takes a little massaging.</li>
+                <li>Critical for threat hunting and incident response</li>
+                <li>Logs must be <strong>time synchronized</strong></li>
+                <li>Supports user behavioral analysis</li>
+                <li><span class="hwk">Don't forget to account for log storage capacity</span></li>
+            </ul>
+            <li>{{SOAR}} - Next Generation, automation tools</li>
+        </ul>
+    </div>
+    <div id="pentestconcepts">
+        <h3>Pentesting Concepts</h3>
+        <ul>
+            <li>Recon</li>
+            <li>Initial Exploit</li>
+        </ul>
+    </div>
 </body>
