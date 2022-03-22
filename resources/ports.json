@@ -18,7 +18,8 @@
                 "143" : "IMAP",
                 "67" : "DHCP server",
                 "68" : "DHCP client",
-                "995" : "POP3"
+                "995" : "POP3",
+                "514" : "Syslog - UDP"
             }
         ]
     },
