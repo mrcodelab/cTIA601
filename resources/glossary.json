@@ -20,7 +20,7 @@
                 "End of Life" : "Segment the asset off the network that can connect to the internet",
                 "Intrusive Scan" : "run the exploits on the target system",
                 "Non-intrusive Scan" : "stop short of running the exploits on the target system",
-                "Tokenization" : "process of subsituting sensitive data like credit cards",
+                "Tokenization" : "process of subsituting sensitive data like credit cards. The token has no exploitable value",
                 "Transit Gateway" : "A way of connecting multiple VPC's",
                 "Globally distributed instances/ Cloud" : "Indicates CASB",
                 "Data Sovereignty" : "Must adhere to regional data handling laws"
@@ -80,7 +80,10 @@
                 "MAC" : "Mandatory Access Controls",
                 "RBAC" : "Role Based Access Controls",
                 "WAF" : "Web Application Firewall - a.k.a. Reverse Proxy",
-                "FIM" : "File Integrity Management - A tool to compare changes to file hashes"
+                "FIM" : "File Integrity Management - A tool to compare changes to file hashes",
+                "BYOD" : "Bring Your Own Device",
+                "CYOD" : "Choose Your Own Device - company provided device list",
+                "COPE" : "Company Owned - Personally Enabled"
             }
         ]
     }

@@ -19,7 +19,8 @@
                 "67" : "DHCP server",
                 "68" : "DHCP client",
                 "995" : "POP3",
-                "514" : "Syslog - UDP"
+                "514" : "Syslog - UDP",
+                "69" : "TFTP - TCP & UDP - considered less secure than FTP"
             }
         ]
     },

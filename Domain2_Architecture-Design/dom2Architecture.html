@@ -44,7 +44,7 @@
             <p>Defines who has access to the data</p>
           </ul>
         </div>
-        <h3 align="center">Recovery</h3>
+        <h3>Recovery</h3>
         <img src="../resources/DR_Site_Options.jpg">
         <ul>
             <li>DR - Disaster Recovery - bringing systems back online after a disaster including backup restoration</li>
@@ -52,15 +52,24 @@
         </ul>
     </div>
     <div id="hypervisors">
-        <h3 align="center">Virtualization</h3>
+        <h3>Virtualization</h3>
         <p>Containters vs Virtualization</p>
         <ul>
             <li>Containers (like Docker) virtualize the OS</li>
             <li>Virtualization emulates the hardware</li>
         </ul>
+        <ul>Types of Virtualization:
+          <li>Type 1</li>
+            <ul>
+              <li>Runs directly on the system hardware without a host OS</li>
+              <li>Ofent called "native", "bare-metal", or embedded hypervisors</li>
+            </ul>
+          <li>Type 2</li>
+          <ul><li>Run within the host OS, acting as a manager of the VM</li></ul>
+        </ul>
     </div>
     <div id="aaS">
-        <h3 align="center">As A Service</h3>
+        <h2 align="center">As A Service</h2>
         <ul>
             <li>IaaS</li>
             <ul>
@@ -76,15 +85,78 @@
                 <li>Subscription to an application or family of applications</li>
                 <li>No subscriber control over the platform hosting the apps</li>
             </ul>
+            <li>FaaS - Function as a Service</li>
+            <ul>
+              <li>Serverless architecture is a software design pattern where applications are hosted by a 3rd service</li>
+              <li>Applications are broken up into functions and can be invoked and scaled individually</li>
+            </ul>
         </ul>
     </div>
-    <div id="bckups">
-        <h2 align="center">Backup Strategy</h2>
-        <p>The CompTIA answer is the <span class="emphasized">Full backup + Differential</span> is the fastest
-            because you're only restoring the Full as a baseline and 1 change. Incremental backup represents <b>1:n</b>.
-        </p>
+    <div id="dlp">
+      <h2 align="center">Data Loss Prevention</h2>
+      <h3>Data Loss Prevention</h3>
+      <ul>
+        <li>Cloud Based</li>
+        <ul>
+          <li>Refers to the moving of administration of DLP capabilities to the cloud</li>
+          <li>Helpful in non-typical environments, especially when remote workers are involved</li>
+        </ul>
+        <li>Email</li>
+        <ul>
+          <li>DLP solutions can be set to scan emails and attachments, as well as instant messaging services and social media</li>
+        </ul>
+        <li>USB Blocking</li>
+        <ul>
+          <li>A DLP solution can block USB <span class="emphasized">writes</span> in an environment when the data being written is
+            determined to be confidential</li>
+          <li>Helps prevent data theft via removable media</li>
+        </ul>
+      </ul>
+      <div id="bckups">
+          <h2 align="center">Backup Strategy</h2>
+          <p>The CompTIA answer is the <span class="emphasized">Full backup + Differential</span> is the fastest
+              because you're only restoring the Full as a baseline and 1 change. Incremental backup represents <b>1:n</b>.
+          </p>
+      </div>
+      <div id="recovery">
+        <h2 align="center">Recovery Sites</h2>
+        <h3>Hot Sites</h3>
+        <ul>
+          <li>A fully operational facility equipped with all the standard hardware and software used by the organization</li>
+          <li>Most expensive recovery option as they are basically live copies of the production enrivronment</li>
+        </ul>
+        <h3>Warm Sites</h3>
+        <ul>
+          <li>Operationally between a hot and cold site</li>
+          <li>May have hardware and software in a <<span class="emphasized">stopped</span> state, requiring only starting up and a differential backup restore</li>
+          <li>Less expensive than a hot site, but more costly than cold as the system is in near ready condition</li>
+        </ul>
+        <h3>Cold Sites</h3>
+        <ul>
+          <li>A backed up facility that has the necessary infrastructure, but not the actual computer equipment in place</li>
+          <li>A cold site is not ready for immediate operations and typically takes a few days to bring online</li>
+          <li>Least expensive to maintain</li>
+        </ul>
+      </div>
     </div>
-    <p><span class="hwk">We went through Domain2 pretty quick reread pages
+    <h2 align="center"><a href="Cryptography.html">Cryptography</a></h2>
+    <h2 align="center">Hardware & Firmware Security</h2>
+    <ul>
+      <li>{{HSM}}</li>
+      <li>{{TPM}}</li>
+    </ul>
+    <div id="casb">
+      <h2 align="center">Cloud Access Security Broker (CASB)</h2>
+      <p>A {{CASB}} is a tool that monitors traffic as it flows between a cloud service provider and your network. The CASB is used for
+        ensuring that the security policies are followed and enforced, helping prevent things like unencrypted data
+        from being sent to or stored on a cloud solution.
+      </p>
+      <ul>
+        <li>Integrates your organization's seucirty-related policies to applications running in the cloud</li>
+        <li>Can detect high-risk applications/users and enforce encryption</li>
+      </ul>
+    </div>
+    <p><span class="hwk">We went through Domain2 pretty quick, reread pages
             141-197. <br>
             Work recursively through questions 399-300.
         </span>
