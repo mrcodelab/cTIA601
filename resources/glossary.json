@@ -24,7 +24,11 @@
                 "Transit Gateway" : "A way of connecting multiple VPC's",
                 "Globally distributed instances/ Cloud" : "Indicates CASB",
                 "Data Sovereignty" : "Must adhere to regional data handling laws",
-                "Out of Band" : "Sharing a symmetric encryption key using a method separate from the communication data being sent"
+                "Out of Band" : "Sharing a symmetric encryption key using a method separate from the communication data being sent",
+                "Elasticity/Scalability" : "The ability to ramp up and down based on load or need",
+                "Redundancy" : "Fault tolerance provided by high availability (HA)",
+                "Continuous Integration" : "Paired with Security Automation",
+                "RAID-10" : "Striped set of mirrors"
             }
         ]
     },
@@ -84,7 +88,9 @@
                 "FIM" : "File Integrity Management - A tool to compare changes to file hashes",
                 "BYOD" : "Bring Your Own Device",
                 "CYOD" : "Choose Your Own Device - company provided device list",
-                "COPE" : "Company Owned - Personally Enabled"
+                "COPE" : "Company Owned - Personally Enabled",
+                "HA" : "High Availability",
+                "CD/CI" : "Continuous Deployment/Continuous Integration"
             }
         ]
     }
