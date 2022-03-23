@@ -94,28 +94,7 @@
                 </ul>
                 <li>RBAC: Role Based Access Controls</li>
             </ul>
-        </div>"
-       <div id="firewalls">
-           <h2 align="center">Firewalls</h2>
-                <p><strong>Note: </strong><span class="cb">iptables</span> is a firewall management tool</p>
-                <ul>
-                    <li>Gen1</li>
-                    <ul>
-                        <li>Stateless packet filtering only</li>
-                        <li>susceptible to IP spoofing</li>
-                    </ul>
-                    <li>Gen2</li>
-                    <ul>
-                        <li>Enables stateful packet filtering</li>
-                        <li>MITM attackers setup Proxy IP servers in front of their C2 server, employing dynamic DNS
-                            which allows the IP to constantly change - making it very difficult to track.
-                        </li>
-                    </ul>
-                    <li>Gen3</li>
-                    <li>Gen4</li>
-                    <li>Gen5</li>
-                </ul>
-       </div>
+        </div>
         <div id="hashes">
             <h2>Hashes</h2>
             <p>In linux <span class="cb">$user: md5sum {obj-target}</span> creates a

@@ -181,9 +181,97 @@
       <p>Hot/Cold Aisle</p>
       <img class="rpng" src="../resources\imgs\hot-vs-cold-aisle.jpg">
     </div>
-    <!-- <p><span class="hwk">We went through Domain2 pretty quick, reread pages
-            141-197. <br>
-            Work recursively through questions 399-300.
-        </span>
-    </p> -->
+    <div id="hostsec">
+      <h2 align="center">Host Security</h2>
+      <h3>Host-based {{IDS}} & {{IPS}}</h3>
+      <ul>
+        <li>NIPS vs HIPS: Network vs Host</li>
+        <li>Hardware Root of Trust</li>
+        <ul><li>protection during boot</li></ul>
+        <li>UEFI/BIOS</li>
+        <ul>
+          <li>UEFI is for 64bit systems</li>
+          <li>BIOS is for 32bit systems</li>
+        </ul>
+      </ul>
+
+    </div>
+    <div id="firewalls">
+      <h2 align="center">Firewalls</h2>
+      <p><strong>Note: </strong><span class="cb">iptables</span> is a firewall management tool</p>
+      <ul>
+        <li>Gen1</li>
+        <ul>
+          <li>Stateless packet filtering only</li>
+          <li>susceptible to IP spoofing</li>
+        </ul>
+        <li>Gen2</li>
+        <ul>
+          <li>Enables stateful packet filtering</li>
+          <li>MITM attackers setup Proxy IP servers in front of their C2 server, employing dynamic DNS
+            which allows the IP to constantly change - making it very difficult to track.
+          </li>
+          <li>a.k.a. Forward || Reverse Proxy</li>
+          <img class="rpng" src="../resources\imgs\fwdVSrvrsproxies.png">
+        </ul>
+        <li>Next Generation</li>
+        <ul>
+          <li>Includes {{DPI}}</li>
+        </ul>
+      </ul>
+    </div>
+    <div id="avedr">
+      <h3>Antivirus & EDR</h3>
+      <ul>
+        <li>{{EDR}}</li>
+        <li>Application Whitelisting</li>
+        <li>{{UTM}}</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 align="center">Network Architecture</h2>
+      <h3>Zones</h3>
+      <ul>
+        <li>DMZ</li>
+        <img class="rpng" src=",,/resources\imgs\dmz.PNG">
+        <li>Intranet</li>
+        <li>Extranet</li>
+        <li>Internet</li>
+        <li>Fog/Edge Computing</li>
+        <img class="rpng" src="../resources\imgs\fogcompute.png">
+      </ul>
+      <h3>Topologies</h3>
+      <ul>
+        <li>Wireless</li>
+        <li>Ad Hoc</li>
+        <li>East-Wet</li>
+        <ul><li>traffic flow between packets within a datacenter</li></ul>
+        <li>North-South: how you get in and out of the cloud</li>
+        <li>{{NAT}}</li>
+        <img class="rpng" src="../resources\imgs\nat.png">
+        <li></li>
+      </ul>
+      <h3>Segregation</h3>
+      <ul>
+        <li>Physical</li>
+        <li>Logical - a.k.a. {{VLAN}}</li>
+        <img class="rpng" src="../resources\imgs\vlan.png">
+        <li>Air gap</li>
+        <li>Virtualization as Segregation</li>
+        <ul>
+          <li>An abstraction layer to simulate hardware</li>
+          <li>VM's operate independently from each other</li>
+          <li><strong>Malware often detects virtualization & may behave differently or try to escape</strong></li>
+          <li>Zero Trust model</li>
+        </ul>
+      </ul>
+      <h3>Tunneling</h3>
+      <ul>
+        <li>VPN Tunneling</li>
+        <li>Site-to-Site vpn gateway for entire networks</li>
+        <li>Remote Access - work from home model</li>
+      </ul>
+    </div>
+
 </body>

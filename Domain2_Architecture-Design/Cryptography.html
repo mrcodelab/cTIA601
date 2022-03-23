@@ -96,26 +96,47 @@
   </div>
   <div id="secprotocols">
     <h2 align="center">Secure Protocols</h2>
-    <ul>
-      <li>HTTPS</li>
-      <li>SSH</li>
-      <li>SFTP - FTP secured with TLS/SSL</li>
-      <li>LDAP-S</li>
-    </ul>
-    <h3>IPSec Framework</h3>
-    <ul>Protocols
-      <li>{{ESP}} encrypts</li>
-      <li>{{AH}} filters traffic</li>
-      <ul><li><strong>Most secure</strong></li></ul>
-    </ul>
-    <ul>Modes
-      <li>Tunnel</li>
-      <ul><li>VPN to VPN</li></ul>
-      <li>Transport</li>
       <ul>
-        <li>Routable</li>
+        <li>HTTPS</li>
+        <li>SSH</li>
+        <li>SFTP - uses SSH to establish encrypted FTP communications</li>
+        <ul><li>uses TCP port 22</li></ul>
+        <li>FTPS - FTP secured with TLS/SSL</li>
+        <li>DNSSEC - a set of extensions that secure a subset of DNS</li>
+        <ul><li>uses TCP & UDP on port 53</li></ul>
+        <li>SSL/TLS</li>
+        <li>S/MIME - email digital signature via certificate</li>
+        <li>{{SRTP}} - secure media streaming & VoIP</li>
+        <li>LDAPS - LDAP secured with TLS/SSL</li>
+        <li>SNMPv3</li>
       </ul>
-    </ul>
+      <h3>IPSec Framework</h3>
+        <ul>Protocols
+          <li>{{AH}} filters traffic</li>
+          <ul>
+            <li>Authenticates the origin of IP packets and guarantees the integrity of the data</li>
+            <li>Does not provide <strong>confidentiality</strong> as the packet's data section is not encrypted</li>
+          </ul>
+          <li>{{ESP}} encrypts</li>
+          <ul>
+            <li>Can be used in combination with AH</li>
+            <li>Encrypts a packet to secure the data</li>
+            <li>Adds an ESP header, trailer and integrity check value to the original packet</li>
+          </ul>
+        </ul>
+        <ul>Modes
+          <li>Tunnel</li>
+          <ul>
+            <li>Encrypts the entire packet and appends a new IP header</li>
+            <li>Used to send communications on non-secure networks</li>
+          </ul>
+          <li>Transport</li>
+          <ul>
+            <li>Routable</li>
+            <li>Encrypts only the packet data and not the packet's IP headers</li>
+            <li>Generally used on private networks for E2E communications</li>
+          </ul>
+        </ul>
   </div>
 
 

@@ -99,7 +99,13 @@
                 "ECDHE" : "Ecliptic Curve Diffie-Helman Exchange",
                 "CHAP" : "Challenge and Password",
                 "AH" : "Authentication Headers",
-                "ESP" : "Encapsulating Security Payload"
+                "ESP" : "Encapsulating Security Payload",
+                "SRTP" : " Secure Real-time Transport Protocol",
+                "IDS" : "Intrusion Detection System",
+                "IPS" : "Intrusion Prevention System",
+                "UTM" : "Unified Threat Management",
+                "EDR" : "Endpoint Detection and Response",
+                "DPI" : "Deep Packet Inspection"
             }
         ]
     }
