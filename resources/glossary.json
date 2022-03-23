@@ -22,7 +22,8 @@
                 "Non-intrusive Scan" : "stop short of running the exploits on the target system",
                 "Tokenization" : "process of subsituting sensitive data like credit cards",
                 "Transit Gateway" : "A way of connecting multiple VPC's",
-                "Globally distributed instances/ Cloud" : "Indicates CASB"
+                "Globally distributed instances/ Cloud" : "Indicates CASB",
+                "Data Sovereignty" : "Must adhere to regional data handling laws"
             }
         ]
     },
