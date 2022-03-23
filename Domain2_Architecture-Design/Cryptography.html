@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 <body>
-  <div id="">
+  <div id="cryptoconcepts">
     <h2 align="center">Cryptographic Concepts</h2>
       <p>A cryptographic algorithm is a set of mathematical functions which uses a (often secret) string of data
         known as a key, to encrypt/decrypt other data.
@@ -30,6 +30,44 @@
       <li>{{REST}}: uses http and TLS encryption standards</li>
       <li>{{SOAP}}: use built in protocols known as Web Services Security (WS Security)</li>
     </ul>
+  </div>
+
+  <div id="hashes">
+    <h2 align="center">Hashes</h2>
+  </div>
+  <div id="symmetric">
+    <h2 align="center">Symmetric Encryption</h2>
+    <ul>
+      <li>Sharing of private key happens "{{out of band}}"</li>
+      <li>Needs an {{IV}}</li>
+      <li>Provides Confidentiality</li>
+      <p><strong>Encrypt/Decrypt questions == <span class="emphasized">Symmetric Encryption</span></strong></p>
+    </ul>
+    <div>
+      <img width="500px" src="../resources/symmkeyexch.png">
+    </div>
+  </div>
+  <div id="asymm">
+    <h2 align="center">Asymmetric Encryption</h2>
+    <ul>
+      <li>Key [1:4]</li>
+      </ul>
+      <div>
+        <img class="rpng" src="../resources/dhkeyexch.png">
+        <p>Diffie-Hellman Key Exchange</p>
+      </div>
+  <div id="pki">
+    <h3>Public Key Infrastructure</h3>
+    <ol>
+      <li>Create</li>
+      <li>Update</li>
+      <li><strong>Revoke</strong></li>
+    </ol>
+    <div id="pkiimg">
+      <img class="rpng" src="../resources/pki-architecture.png">
+      <img class="rpng" src="../resources/3-tier-ca-pki.png"
+    </div>
+  </div>
   </div>
 
 

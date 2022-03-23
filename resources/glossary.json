@@ -23,7 +23,8 @@
                 "Tokenization" : "process of subsituting sensitive data like credit cards. The token has no exploitable value",
                 "Transit Gateway" : "A way of connecting multiple VPC's",
                 "Globally distributed instances/ Cloud" : "Indicates CASB",
-                "Data Sovereignty" : "Must adhere to regional data handling laws"
+                "Data Sovereignty" : "Must adhere to regional data handling laws",
+                "Out of Band" : "Sharing a symmetric encryption key using a method separate from the communication data being sent"
             }
         ]
     },
