@@ -28,7 +28,9 @@
                 "Elasticity/Scalability" : "The ability to ramp up and down based on load or need",
                 "Redundancy" : "Fault tolerance provided by high availability (HA)",
                 "Continuous Integration" : "Paired with Security Automation",
-                "RAID-10" : "Striped set of mirrors"
+                "RAID-10" : "Striped set of mirrors",
+                "Mantraps" : "May also be called an Access Control Vestibule",
+                "Perfect Forward Secrecy" : "Ensures all previously encrypted data remains secure if a key is compromised"
             }
         ]
     },
@@ -90,7 +92,14 @@
                 "CYOD" : "Choose Your Own Device - company provided device list",
                 "COPE" : "Company Owned - Personally Enabled",
                 "HA" : "High Availability",
-                "CD/CI" : "Continuous Deployment/Continuous Integration"
+                "CD/CI" : "Continuous Deployment/Continuous Integration",
+                "ICS" : "Industrial Control Systems",
+                "SCADA" : "Supervisory Control and Data Accumulation",
+                "DHE" : "Diffie-Helman Exchange",
+                "ECDHE" : "Ecliptic Curve Diffie-Helman Exchange",
+                "CHAP" : "Challenge and Password",
+                "AH" : "Authentication Headers",
+                "ESP" : "Encapsulating Security Payload"
             }
         ]
     }

@@ -69,6 +69,54 @@
       </div>
     </div>
   </div>
+  <div id="pfs">
+    <h3>Perfect Forward Secrecy</h3>
+    <p>{{DHE}} and {{ECDHE}} provide perfect forward secrecy</p>
+  </div>
+  <div id="passwds">
+    <h2 align="center">Passwords</h2>
+    <ul>
+      <li>Strength comes from complexity</li>
+      <li>Adding complexity:</li>
+      <ul>
+        <li>Salting</li>
+        <li>{{CHAP}} applies a nonce value to the hash</li>
+      </ul>
+    </ul>
+  </div>
+
+  <div id="authprotocols">
+    <h2 align="center">Authentication Protocols</h2>
+    <ul>
+      <li>EAP</li>
+      <li>PEAP</li>
+      <li>EAP-FAST: Cisco proprietary only</li>
+      <li>RADIUS - certificate based</li>
+    </ul>
+  </div>
+  <div id="secprotocols">
+    <h2 align="center">Secure Protocols</h2>
+    <ul>
+      <li>HTTPS</li>
+      <li>SSH</li>
+      <li>SFTP - FTP secured with TLS/SSL</li>
+      <li>LDAP-S</li>
+    </ul>
+    <h3>IPSec Framework</h3>
+    <ul>Protocols
+      <li>{{ESP}} encrypts</li>
+      <li>{{AH}} filters traffic</li>
+      <ul><li><strong>Most secure</strong></li></ul>
+    </ul>
+    <ul>Modes
+      <li>Tunnel</li>
+      <ul><li>VPN to VPN</li></ul>
+      <li>Transport</li>
+      <ul>
+        <li>Routable</li>
+      </ul>
+    </ul>
+  </div>
 
 
 </body>
