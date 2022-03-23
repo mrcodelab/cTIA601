@@ -28,8 +28,7 @@
         "Secure Ports" : "",
         "contents" : [
             {
-                "22" : "SSH",
-                "22" : "SCP",
+                "22" : "SSH & SCP",
                 "443" : "https",
                 "8443" : "Tomcat Startup - with SSL",
                 "636" : "LDAP-S",
