@@ -36,25 +36,11 @@
         ]
     },
     {
-        "Acronyms" : "",
-        "contents" : [
+        "NetworkAcronyms" : "",
+        "network-contents" : [
             {
-                "ISAs" : "Interconnection Security Agreements",
-                "SLA": "Service Level Agreement",
-                "MOU" : "Memorandum of Understanding",
-                "MOA" : "Memorandum of Agreement",
-                "NDA" : "Non-disclosure Agreements",
-                "EOL" : "End of Life",
                 "ARP" : "Address Resolution Protocol - a set of network addressing tables",
-                "IOC" : "Indicators of Compromise",
-                "PUP" : "Potentially Unwanted Program - slows computer down noticably",
-                "RAT" : "Remote Access Trojan",
-                "CSRF" : "Cross Site Request Forgery - plain text token",
-                "XSRF" : "Cross Site Request Forgery - encrypted token",
-                "MITM" : "Man In The Middle",
-                "SIP" : "Session Initiation Protocol",
                 "WEP" : "Wired Equivalent Privacy",
-                "IV" : "Initialization Vector - when used in context of cryptography",
                 "PSK" : "Pre Shared Key",
                 "AES" : "Advanced Encryption Standard",
                 "WPA - TKIP" : "WiFi Protected Access - Transient Key Integrity Protocol",
@@ -62,53 +48,109 @@
                 "DHCP" : "Dynamic Host Configuration Protocol",
                 "WPS" : "Wireless Protected Setup",
                 "CAM": "Content Allocation Memory table - a switch table",
-                "NVD" : "National Vulnerability Database",
-                "CVE" : "Common Vulnerabilities and Exposures",
-                "CVSS" : "Common Vulnerability Scoring System",
-                "ISACs" : "Industry specific collaborative vulnerability collaboration",
                 "Tor" : "The Onion Router",
-                "SIEM" : "Security Information & Event Management",
-                "SOAR" : "Security Orchestration Automation and Response",
-                "DLP" : "Data Loss Prevention",
-                "API" : "Application Programming Interface",
-                "HSM" : "Hardware Security Module",
-                "TPM" : "Trusted Platform Module",
-                "CASB" : "Cloud Access Security Broker",
-                "BIA" : "Business Impact Analysis",
-                "MSP" : "Managed Services Provider",
-                "MSSP" : "Managed Security Services Provider - security focussed",
-                "VPC" : "Virtual Private Cloud",
-                "IaaS" : "Infrastructure as a Service",
-                "PaaS" : "Platform as a Service",
-                "SaaS" : "Software as a Service",
-                "ABAC" : "Attribute Based Access Controls",
-                "DAC" : "Discretionary Access Controls",
-                "GBAC" : "Graph-based Access Controls",
-                "IBAC" : "Identity Based Access Controls",
-                "MAC" : "Mandatory Access Controls",
-                "RBAC" : "Role Based Access Controls",
                 "WAF" : "Web Application Firewall - a.k.a. Reverse Proxy",
-                "FIM" : "File Integrity Management - A tool to compare changes to file hashes",
-                "BYOD" : "Bring Your Own Device",
-                "CYOD" : "Choose Your Own Device - company provided device list",
-                "COPE" : "Company Owned - Personally Enabled",
-                "HA" : "High Availability",
-                "CD/CI" : "Continuous Deployment/Continuous Integration",
-                "ICS" : "Industrial Control Systems",
-                "SCADA" : "Supervisory Control and Data Accumulation",
-                "DHE" : "Diffie-Helman Exchange",
-                "ECDHE" : "Ecliptic Curve Diffie-Helman Exchange",
-                "CHAP" : "Challenge and Password",
-                "AH" : "Authentication Headers",
-                "ESP" : "Encapsulating Security Payload",
-                "SRTP" : " Secure Real-time Transport Protocol",
-                "IDS" : "Intrusion Detection System",
-                "IPS" : "Intrusion Prevention System",
-                "UTM" : "Unified Threat Management",
-                "EDR" : "Endpoint Detection and Response",
-                "DPI" : "Deep Packet Inspection",
-                "UPS" : "Uninterrupted Power Supply",
-                "TGT" : "Ticket Granting Ticket"
+                "IDS": "Intrusion Detection System",
+                "IPS": "Intrusion Prevention System",
+                "UTM": "Unified Threat Management",
+                "EDR": "Endpoint Detection and Response",
+                "DPI": "Deep Packet Inspection",
+                "UPS": "Uninterrupted Power Supply"
+            }
+        ]
+    },
+    {
+        "BusinessAcronyms": "",
+        "contents": [
+            {
+                "ISAs": "Interconnection Security Agreements",
+                "SLA": "Service Level Agreement",
+                "MOU": "Memorandum of Understanding",
+                "MOA": "Memorandum of Agreement",
+                "NDA": "Non-disclosure Agreements",
+                "EOL": "End of Life",
+                "SIEM": "Security Information & Event Management",
+                "SOAR": "Security Orchestration Automation and Response",
+                "DLP": "Data Loss Prevention",
+                "API": "Application Programming Interface",
+                "BIA": "Business Impact Analysis",
+                "MSP": "Managed Services Provider",
+                "MSSP": "Managed Security Services Provider - security focussed",
+                "BYOD": "Bring Your Own Device",
+                "CYOD": "Choose Your Own Device - company provided device list",
+                "COPE": "Company Owned - Personally Enabled",
+                "CD/CI": "Continuous Deployment/Continuous Integration"
+            }
+        ]
+    },
+    {
+        "CryptographyAcronyms": "",
+        "contents": [
+            {
+                "SIP": "Session Initiation Protocol",
+                "IV": "Initialization Vector - when used in context of cryptography",
+                "DHE": "Diffie-Helman Exchange",
+                "ECDHE": "Ecliptic Curve Diffie-Helman Exchange",
+                "CHAP": "Challenge and Password",
+                "AH": "Authentication Headers",
+                "ESP": "Encapsulating Security Payload",
+                "SRTP": " Secure Real-time Transport Protocol"
+            }
+        ]
+    },
+    {
+        "InfrastructureAcronyms": "",
+        "contents": [
+            {
+                "EOL": "End of Life",
+                "SIEM": "Security Information & Event Management",
+                "SOAR": "Security Orchestration Automation and Response",
+                "HSM": "Hardware Security Module",
+                "TPM": "Trusted Platform Module",
+                "CASB": "Cloud Access Security Broker",
+                "VPC": "Virtual Private Cloud",
+                "IaaS": "Infrastructure as a Service",
+                "PaaS": "Platform as a Service",
+                "SaaS": "Software as a Service",
+                "WAF": "Web Application Firewall - a.k.a. Reverse Proxy",
+                "FIM": "File Integrity Management - A tool to compare changes to file hashes",
+                "BYOD": "Bring Your Own Device",
+                "CYOD": "Choose Your Own Device - company provided device list",
+                "COPE": "Company Owned - Personally Enabled",
+                "HA": "High Availability",
+                "ICS": "Industrial Control Systems",
+                "SCADA": "Supervisory Control and Data Accumulation",
+                "TGT": "Ticket Granting Ticket - Kerberos"
+            }
+        ]
+    },
+    {
+        "AttackAcronyms": "",
+        "contents": [
+            {
+                "IOC": "Indicators of Compromise",
+                "PUP": "Potentially Unwanted Program - slows computer down noticably",
+                "RAT": "Remote Access Trojan",
+                "CSRF": "Cross Site Request Forgery - plain text token",
+                "XSRF": "Cross Site Request Forgery - encrypted token",
+                "MITM": "Man In The Middle",
+                "NVD": "National Vulnerability Database",
+                "CVE": "Common Vulnerabilities and Exposures",
+                "CVSS": "Common Vulnerability Scoring System",
+                "ISACs": "Industry specific collaborative vulnerability collaboration"
+            }
+        ]
+    },
+    {
+        "AccessControlsAcronyms": "",
+        "contents" : [
+            {
+                "ABAC": "Attribute Based Access Controls",
+                "DAC": "Discretionary Access Controls",
+                "GBAC": "Graph-based Access Controls",
+                "IBAC": "Identity Based Access Controls",
+                "MAC": "Mandatory Access Controls",
+                "RBAC": "Role Based Access Controls"
             }
         ]
     }
