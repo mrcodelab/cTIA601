@@ -1,0 +1,91 @@
+<!--dom3.html-->
+<head>
+    <title>Domain3 Implementation</title>
+    <h1 align="center">Domain3 Implementation</h1>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body>
+    <div>
+        <div id="iamconcepts">
+            <h2 align="center">Identity and Access Management</h2>
+            <h3>Identification & AAA</h3>
+            <h3>Multifactor Authentication</h3>
+            <h3>Management</h3>
+        </div>
+        <div id="iamimplement">
+            <h2 align="center">Implement IAM Controls</h2>
+                <div id="iamcontrols">
+
+                </div>
+        </div>
+        <div>
+            <h2 align="center">Authentication Solutions</h2>
+            <h3>Kerberos</h3>
+            <img class="rpng" src="../resources\imgs\kerberosauth.jpg">
+        </div>
+        <div>
+            <div id="acm">
+                <h2 align="center">Access Control Models</h2>
+                <ul>
+                    <li>MAC: Mandatory Access Controls</li>
+                    <ul>
+                        <li>Typical of national defense classified systems</li>
+                        <li>Use SELinux to try it out</li>
+                    </ul>
+                    <li><strong>DAC</strong>: Discretionary Access Controls</li>
+                    <ul><li>Owner-based</li></ul>
+                    <li>ABAC: Attribute Based Access Controls</li>                    
+                    <li>RBAC: Role Based Access Controls</li>
+                    <ul><li>Think banking systems based on job descriptions</li></ul>                                   
+                    <li>Rule-Based Access Control</li>
+                    <ul><li>Firewall rules</li></ul>
+                    <li>IBAC: Identity Based Access Controls</li>
+                    <li>GBAC: Graph-based Access Controls</li>
+                    <ul>
+                        <li>Compared to other approaches like RBAC or ABAC, the main difference is that in
+                            GBAC access rights are defined using an organizational query language instead of total enumeration.
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <div id="accttype">
+                <h2 align="center">Account Types</h2>
+                <ul>
+                    <li>User Accounts</li>
+                    <ul>
+                        <li>limited privileges</li>
+                    </ul>
+                    <li>Privileged Accounts</li>
+                    <ul><li>higher permissions than a regular user</li></ul>
+                    <li>Service Accounts</li>
+                    <ul><li>For OS Services/App Processes</li></ul>
+                </ul>
+                <h3>General Concepts</h3>
+                <p><strong>Rule of Least Privilege</strong></p>
+                <ul>
+                    <li>Auditing</li>
+                    <li>Time of day restrictions</li>
+                </ul>
+            </div>
+        </div>
+        <div id="tools">
+            <h2 align="center">Security Tools</h2>
+            <ol>
+                <li>Netstat</li>
+                <li>Nmap</li>
+                <li>tcpdump</li>
+                <li>tail/head/grep - Linux commands</li>
+            </ol>
+        </div>
+        <div id="incidentresponse">
+            <h2 align="center">Incident Response Plans</h2>
+            <ol>Common Types
+                <li>Malware</li>
+                <li>Ransomware</li>
+                <li>Physical Theft</li>
+                <li>Natural Disaster</li>
+            </ol>
+        </div>
+    </div>
+</body>

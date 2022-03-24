@@ -30,7 +30,8 @@
                 "Continuous Integration" : "Paired with Security Automation",
                 "RAID-10" : "Striped set of mirrors",
                 "Mantraps" : "May also be called an Access Control Vestibule",
-                "Perfect Forward Secrecy" : "Ensures all previously encrypted data remains secure if a key is compromised"
+                "Perfect Forward Secrecy" : "Ensures all previously encrypted data remains secure if a key is compromised",
+                "Assertion" : ""
             }
         ]
     },
@@ -106,7 +107,8 @@
                 "UTM" : "Unified Threat Management",
                 "EDR" : "Endpoint Detection and Response",
                 "DPI" : "Deep Packet Inspection",
-                "UPS" : "Uninterrupted Power Supply"
+                "UPS" : "Uninterrupted Power Supply",
+                "TGT" : "Ticket Granting Ticket"
             }
         ]
     }
