@@ -12,7 +12,7 @@
                 "21" : "FTP - TCP",
                 "389": "LDAP",
                 "161" : "SNMP",
-                "25" : "SMTP",
+                "25" : "SMTP - Simple Mail Transport Protocol",
                 "3389" : "Microsoft RDP",
                 "53" : "DNS",
                 "143" : "IMAP",

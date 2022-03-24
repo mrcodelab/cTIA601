@@ -1,0 +1,31 @@
+<!--forensics.html-->
+
+<head>
+    <title>Forensics</title>
+    <h1 align="center">Forensics</h1>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <h3>Data Dump</h3>
+            <ol>
+                <li>Connect a <strong>write blocker</strong> to the disk</li>
+                <li><span class="cb">script {scriptname}</span></li>
+                <li><span class="cb">dd if=/de/disk0 of=file.dd bs=1024 conv = noerror, notrunc, sync</span></li>
+                <li><span class="cb">md5</span> to hash the copy</li>
+                <li>Compare the hash to show the court the copy is unchanged</li>
+            </ol>
+            <ul>
+                <li>NTFS is contiguous</li>
+                <li>Empty space at the end is called <span class="emphasized">Slack Space</span></li>
+                <li><span class="cd">Quick Format</span> only deletes the MS File Table and writes a new one. The data remains</li>
+            </ul>
+            <h2 align="center">Investigation</h2>
+            <h3>Initiation</h3>
+            <h3>Chain of Custody</h3>
+            <h3>E-Discovery</h3>
+        </div>
+    </div>
+</body>

@@ -31,7 +31,9 @@
                 "RAID-10" : "Striped set of mirrors",
                 "Mantraps" : "May also be called an Access Control Vestibule",
                 "Perfect Forward Secrecy" : "Ensures all previously encrypted data remains secure if a key is compromised",
-                "Assertion" : ""
+                "Assertion" : "",
+                "Checksum" : "Another term for hash",
+                "Digest" : "Another term for hash"
             }
         ]
     },
@@ -63,7 +65,9 @@
         "BusinessAcronyms": "",
         "contents": [
             {
+                "ISM" : "Information Security Management",
                 "ISAs": "Interconnection Security Agreements",
+                "BPA": "Business Partner Agreement",
                 "SLA": "Service Level Agreement",
                 "MOU": "Memorandum of Understanding",
                 "MOA": "Memorandum of Agreement",
@@ -79,7 +83,11 @@
                 "BYOD": "Bring Your Own Device",
                 "CYOD": "Choose Your Own Device - company provided device list",
                 "COPE": "Company Owned - Personally Enabled",
-                "CD/CI": "Continuous Deployment/Continuous Integration"
+                "CD/CI": "Continuous Deployment/Continuous Integration",
+                "MTBF" : "Mean Time Between Failure",
+                "RPO" : "Recovery Point Objective",
+                "RTO" : "Recovery Time Objective",
+                "MTTR" : "Mean Time to Repair"
             }
         ]
     },
