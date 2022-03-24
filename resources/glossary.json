@@ -105,7 +105,8 @@
                 "IPS" : "Intrusion Prevention System",
                 "UTM" : "Unified Threat Management",
                 "EDR" : "Endpoint Detection and Response",
-                "DPI" : "Deep Packet Inspection"
+                "DPI" : "Deep Packet Inspection",
+                "UPS" : "Uninterrupted Power Supply"
             }
         ]
     }
