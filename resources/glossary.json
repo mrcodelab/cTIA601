@@ -33,7 +33,9 @@
                 "Perfect Forward Secrecy" : "Ensures all previously encrypted data remains secure if a key is compromised",
                 "Assertion" : "",
                 "Checksum" : "Another term for hash",
-                "Digest" : "Another term for hash"
+                "Digest" : "Another term for hash",
+                "Black Box" : "A tester knows NOTHING about the target system",
+                "White Box" : "A tester has ALL information about a target system"
             }
         ]
     },
@@ -56,8 +58,7 @@
                 "IPS": "Intrusion Prevention System",
                 "UTM": "Unified Threat Management",
                 "EDR": "Endpoint Detection and Response",
-                "DPI": "Deep Packet Inspection",
-                "UPS": "Uninterrupted Power Supply"
+                "DPI": "Deep Packet Inspection"
             }
         ]
     },
@@ -102,7 +103,8 @@
                 "CHAP": "Challenge and Password",
                 "AH": "Authentication Headers",
                 "ESP": "Encapsulating Security Payload",
-                "SRTP": " Secure Real-time Transport Protocol"
+                "SRTP": " Secure Real-time Transport Protocol",
+                "CSR" : "Certificate Signing Request - step 1 for 802.1x"
             }
         ]
     },
@@ -128,7 +130,8 @@
                 "HA": "High Availability",
                 "ICS": "Industrial Control Systems",
                 "SCADA": "Supervisory Control and Data Accumulation",
-                "TGT": "Ticket Granting Ticket - Kerberos"
+                "TGT": "Ticket Granting Ticket - Kerberos",
+                "UPS": "Uninterrupted Power Supply"
             }
         ]
     },
