@@ -161,7 +161,8 @@
                 "GBAC": "Graph-based Access Controls",
                 "IBAC": "Identity Based Access Controls",
                 "MAC": "Mandatory Access Controls",
-                "RBAC": "Role Based Access Controls"
+                "RBAC": "Role Based Access Controls",
+                "SUID" : "Set-User ID - a Linux tool"
             }
         ]
     }
