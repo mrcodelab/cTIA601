@@ -31,7 +31,7 @@
                 "RAID-10" : "Striped set of mirrors",
                 "Mantraps" : "May also be called an Access Control Vestibule",
                 "Perfect Forward Secrecy" : "Ensures all previously encrypted data remains secure if a key is compromised",
-                "Assertion" : "",
+                "Assertion" : "Keyword for SAML",
                 "Checksum" : "Another term for hash",
                 "Digest" : "Another term for hash",
                 "Black Box" : "A tester knows NOTHING about the target system",
@@ -58,7 +58,8 @@
                 "IPS": "Intrusion Prevention System",
                 "UTM": "Unified Threat Management",
                 "EDR": "Endpoint Detection and Response",
-                "DPI": "Deep Packet Inspection"
+                "DPI": "Deep Packet Inspection",
+                "NGFW" : "Next Generation Firewall"
             }
         ]
     },

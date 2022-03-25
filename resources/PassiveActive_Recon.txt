@@ -1,0 +1,28 @@
+Passive Recon
+
+whois
+nslookup
+dig
+DNSDumpster
+Shodan.io
+
+Before the dawn of computer systems and networks, in the Art of War, Sun Tzu taught, “If you know the enemy and know yourself, your victory will not stand in doubt.” If you are playing the role of an attacker, you need to gather information about your target systems. If you are playing the role of a defender, you need to know what your adversary will discover about your systems and networks.
+
+In passive recon you rely on publicly available knowledge. It is the knowledge that you can access from publicly available resources without directly engaging with the target. Think of it like you are loooking at the target territory from afar without stepping foot on that territory.
+
+Active Recon
+
+ping
+traceroute
+telnet
+nc
+
+ping 	ping -c 10 10.10.66.38 on Linux or macOS
+ping 	ping -n 10 10.10.66.38 on MS Windows
+traceroute 	traceroute 10.10.66.38 on Linux or macOS
+tracert 	tracert 10.10.66.38 on MS Windows
+telnet 	telnet 10.10.66.38 PORT_NUMBER
+netcat as client 	nc 10.10.66.38 PORT_NUMBER
+netcat as server 	nc -lvnp PORT_NUMBER
+
+
