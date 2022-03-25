@@ -150,7 +150,8 @@
                 "NVD": "National Vulnerability Database",
                 "CVE": "Common Vulnerabilities and Exposures",
                 "CVSS": "Common Vulnerability Scoring System",
-                "ISACs": "Industry specific collaborative vulnerability collaboration"
+                "ISACs": "Industry specific collaborative vulnerability collaboration",
+                "CIRT" : "Cyber Incident Response Team"
             }
         ]
     },
