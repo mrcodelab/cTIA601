@@ -35,7 +35,8 @@
                 "Checksum" : "Another term for hash",
                 "Digest" : "Another term for hash",
                 "Black Box" : "A tester knows NOTHING about the target system",
-                "White Box" : "A tester has ALL information about a target system"
+                "White Box" : "A tester has ALL information about a target system",
+                "Sockets" : "a.k.a. Port number"
             }
         ]
     },
